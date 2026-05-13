@@ -10,7 +10,9 @@
       "PowerShell(Set-Location \"C:\\\\Users\\\\pilot\\\\Documents\\\\FERNANDO\\\\Documentos_Apps\\\\peopleart\"; $proc = Start-Process -FilePath \"npm\" -ArgumentList \"run\",\"dev\" -PassThru -WindowStyle Hidden; Start-Sleep -Seconds 8; try { $r = Invoke-WebRequest -Uri \"http://localhost:3000\" -MaximumRedirection 0 -ErrorAction SilentlyContinue; \"Status: $\\($r.StatusCode\\)\" } catch { \"Redirect to: $\\($_.Exception.Response.Headers.Location\\)\" }; $proc.Kill\\(\\))",
       "PowerShell(Out-Null *)",
       "PowerShell(netstat *)",
-      "PowerShell(npm run *)"
+      "PowerShell(npm run *)",
+      "Bash(npx tsc *)",
+      "Bash(npm run *)"
     ]
   }
 }

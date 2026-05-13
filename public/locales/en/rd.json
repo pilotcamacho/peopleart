@@ -1,0 +1,101 @@
+{
+  "meta": {
+    "title": "R&D Portfolio",
+    "description": "Peopleart Pty Ltd's research and development portfolio — proprietary algorithms, behavioral science tools, and innovation pipeline."
+  },
+  "overview": {
+    "title": "Innovation at the Core",
+    "body": "Peopleart Pty Ltd is fundamentally an R&D company. The PeopleArt methodology and the Propiología behavioral science platform are not just products — they are the outputs of a sustained program of original research spanning more than a decade. Our innovation pipeline combines algorithm development, hardware prototyping, software engineering, and academic publication. This depth of R&D is what separates PeopleArt from conventional consulting methodologies and positions the company for defensible IP, grant funding, and scalable technology commercialisation."
+  },
+  "algorithms": {
+    "title": "Proprietary Algorithms",
+    "subtitle": "Core algorithmic IP developed by Peopleart Pty Ltd across behavioral analysis, cognitive measurement, and AI-driven personalisation.",
+    "items": [
+      {
+        "name": "Biometric Behavioral Analysis Model",
+        "description": "A computer vision model that reads physiological signals — micro-expressions, posture, movement patterns — to infer behavioral states and cognitive load in real time.",
+        "status": "prototype",
+        "ip": "Proprietary"
+      },
+      {
+        "name": "AI Behavioral Prediction Model",
+        "description": "A machine learning model that predicts behavioral tendencies and archetype alignment from multi-modal input data, enabling personalised development recommendations.",
+        "status": "prototype",
+        "ip": "Proprietary"
+      },
+      {
+        "name": "Cognitive Load Index (CLI)",
+        "description": "A composite index combining biometric signals and behavioral data to quantify cognitive load in real time — enabling interventions precisely calibrated to mental bandwidth.",
+        "status": "validated",
+        "ip": "Proprietary"
+      },
+      {
+        "name": "Care-Multiplier Logic",
+        "description": "An algorithmic framework for measuring and amplifying prosocial behavioral patterns in teams and organisations — the engine behind the Care-Multiplier software tool.",
+        "status": "validated",
+        "ip": "Proprietary"
+      }
+    ]
+  },
+  "hardware": {
+    "title": "Hardware Prototypes",
+    "body": "Peopleart is developing wearable device integrations that bring biometric data collection into enterprise training contexts. These prototypes enable real-time physiological measurement during workshops and coaching sessions, closing the loop between self-report and objective behavioral data.",
+    "status": "In development — [TODO: add specific device details when confirmed]"
+  },
+  "software": {
+    "title": "Software Tools",
+    "items": [
+      {
+        "name": "Care-Multiplier",
+        "description": "A software tool that measures and amplifies prosocial behavioral patterns — care, empathy, and collaborative action — within teams. Based on the Care-Multiplier algorithmic framework and grounded in Propiología's behavioral loop theory.",
+        "platform": "propiology.com"
+      },
+      {
+        "name": "Cognitive Shield",
+        "description": "A cognitive load management tool that helps individuals identify, monitor, and reduce excessive cognitive burden using real-time feedback and structured intervention protocols.",
+        "platform": "propiology.com"
+      }
+    ]
+  },
+  "ip": {
+    "title": "PeopleArt Framework IP",
+    "body": "The six PeopleArt archetypes constitute a documented and systematised methodology that represents significant intellectual property. Each archetype is a complete framework: a conceptual model, a behavioral theory, a set of diagnostic tools, and a practical training curriculum. The framework has been applied in enterprise contexts across [TODO: countries/sectors] and is the subject of ongoing formalisation for patent and trademark protection.",
+    "statusLabel": "IP Status: Documented methodology — formalisation in progress"
+  },
+  "publications": {
+    "title": "Publication Pipeline",
+    "subtitle": "Peopleart Pty Ltd maintains an active publication program to establish academic credibility and open new partnership opportunities.",
+    "items": [
+      "[TODO: List confirmed publications, preprints, or conference presentations]",
+      "Planned: Propiología framework — theoretical foundations (target journal: [TODO])",
+      "Planned: Cognitive Load Index — validation study",
+      "Planned: PeopleArt archetypes as a behavioral taxonomy — enterprise applications"
+    ]
+  },
+  "timeline": {
+    "title": "Innovation Roadmap",
+    "past": "Past Milestones",
+    "future": "Development Pipeline",
+    "pastItems": [
+      "Propiología framework conceptualised and documented",
+      "Six PeopleArt archetypes defined and systematised",
+      "Care-Multiplier algorithm developed",
+      "Cognitive Load Index validated",
+      "propiology.org content platform launched",
+      "Enterprise pilot programs delivered"
+    ],
+    "futureItems": [
+      "Biometric analysis model — production release",
+      "Wearable device integration — pilot testing",
+      "propiology.com SaaS platform — commercial launch",
+      "Academic publication program — first paper submitted",
+      "Enterprise assessment tool — digital version launched",
+      "Series A fundraising round"
+    ]
+  },
+  "statuses": {
+    "concept": "Concept",
+    "prototype": "Prototype",
+    "validated": "Validated"
+  }
+}

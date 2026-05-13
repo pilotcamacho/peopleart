@@ -1,0 +1,61 @@
+{
+  "meta": {
+    "title": "El Ecosistema",
+    "description": "La estrategia de tres portales de Peopleart Pty Ltd — cómo peopleart.co, propiology.org y propiology.com trabajan juntos como una plataforma unificada."
+  },
+  "overview": {
+    "title": "Una Estrategia de Tres Plataformas",
+    "body": "Peopleart Pty Ltd opera a través de tres plataformas digitales distintas, cada una con un papel específico en el ecosistema. Juntas, forman una arquitectura completa: desde la marca y la propiedad intelectual, pasando por la educación y la comunidad, hasta el software comercial y los servicios empresariales. Cada plataforma sirve a una audiencia diferente y genera diferentes formas de valor — pero están diseñadas para funcionar juntas como un sistema único y coherente."
+  },
+  "portals": {
+    "title": "Las Tres Plataformas",
+    "peopleart": {
+      "name": "peopleart.co",
+      "role": "Sede Corporativa y Marca",
+      "description": "Este sitio. La sede institucional de Peopleart Pty Ltd — la empresa que posee la propiedad intelectual detrás de PeopleArt y Propiología. Aquí es donde los compradores empresariales, inversores, evaluadores de subvenciones y socios estratégicos se relacionan con el negocio.",
+      "audience": "Compradores empresariales · Inversores · Evaluadores de subvenciones · Socios",
+      "url": "peopleart.co"
+    },
+    "propiology_org": {
+      "name": "propiology.org",
+      "role": "Contenido, Educación y Comunidad",
+      "description": "El hub de contenido y educación de cara al público. propiology.org sirve como motor de marketing de embudo superior — publicando artículos de largo aliento, contenido educativo, herramientas y recursos comunitarios sobre la ciencia de la Propiología y la metodología PeopleArt.",
+      "audience": "Público general · Estudiantes · Coaches · Psicólogos · Autodidactas",
+      "url": "propiology.org"
+    },
+    "propiology_com": {
+      "name": "propiology.com",
+      "role": "SaaS Comercial — Sistema Operativo Personal",
+      "description": "El producto comercial. propiology.com es una plataforma SaaS de suscripción que da a individuos y organizaciones acceso a herramientas conductuales impulsadas por IA: Care-Multiplier, Cognitive Shield, evaluación conductual personal y programas de desarrollo alineados con arquetipos.",
+      "audience": "Suscriptores B2C · Clientes empresariales B2B · Coaches y practicantes",
+      "url": "propiology.com"
+    }
+  },
+  "connection": {
+    "title": "Cómo se Conectan",
+    "body": "Las tres plataformas comparten una capa de conocimiento unificada — el marco conductual Propiología — pero sirven a diferentes audiencias en diferentes etapas de conciencia y compromiso. propiology.org crea conciencia y educa. peopleart.co convierte el interés empresarial e inversor en relaciones. propiology.com convierte la conciencia en ingresos recurrentes."
+  },
+  "market": {
+    "title": "Arquitectura de Mercado",
+    "items": [
+      {
+        "platform": "peopleart.co",
+        "market": "L&D empresarial y desarrollo de liderazgo",
+        "model": "Consultoría B2B, talleres y programas de facilitación",
+        "note": "Alto valor, menor volumen — principalmente a través de relaciones directas"
+      },
+      {
+        "platform": "propiology.org",
+        "market": "Educación en ciencia conductual y autodesarrollo",
+        "model": "Motor de marketing de contenidos — apoyado por publicidad y comunidad",
+        "note": "Embudo superior — genera leads para ambas plataformas comerciales"
+      },
+      {
+        "platform": "propiology.com",
+        "market": "Herramientas conductuales personales y organizacionales",
+        "model": "Suscripciones SaaS (B2C y B2B)",
+        "note": "Ingresos recurrentes primarios — escalable globalmente"
+      }
+    ]
+  }
+}

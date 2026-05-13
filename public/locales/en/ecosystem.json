@@ -1,0 +1,61 @@
+{
+  "meta": {
+    "title": "The Ecosystem",
+    "description": "The three-portal strategy behind Peopleart Pty Ltd — how peopleart.co, propiology.org, and propiology.com work together as a unified platform."
+  },
+  "overview": {
+    "title": "A Three-Platform Strategy",
+    "body": "Peopleart Pty Ltd operates across three distinct digital platforms, each with a specific role in the ecosystem. Together, they form a complete architecture: from brand and IP ownership, through education and community, to commercial software and enterprise services. Each platform serves a different audience and generates different forms of value — but they are designed to work together as a single, coherent system."
+  },
+  "portals": {
+    "title": "The Three Platforms",
+    "peopleart": {
+      "name": "peopleart.co",
+      "role": "Corporate HQ & Brand",
+      "description": "This site. The institutional home of Peopleart Pty Ltd — the company that owns the intellectual property behind both PeopleArt and Propiología. This is where enterprise buyers, investors, grant assessors, and strategic partners engage with the business. It presents the PeopleArt methodology, the company's R&D portfolio, the team, and the investor relations portal.",
+      "audience": "Enterprise buyers · Investors · Grant assessors · Partners",
+      "url": "peopleart.co"
+    },
+    "propiology_org": {
+      "name": "propiology.org",
+      "role": "Content, Education & Community",
+      "description": "The public-facing content and education hub. propiology.org serves as the top-of-funnel marketing engine — publishing long-form articles, educational content, tools, and community resources around the science of Propiología and the PeopleArt methodology. It converts general-public interest into informed leads for both the enterprise business and the SaaS platform.",
+      "audience": "General public · Students · Coaches · Psychologists · Self-learners",
+      "url": "propiology.org"
+    },
+    "propiology_com": {
+      "name": "propiology.com",
+      "role": "Commercial SaaS — Personal OS",
+      "description": "The commercial product. propiology.com is a subscription SaaS platform that gives individuals and organisations access to AI-powered behavioral tools: Care-Multiplier, Cognitive Shield, personal behavioral assessment, and archetype-aligned development programs. This is the primary monetisation engine of the ecosystem.",
+      "audience": "B2C subscribers · B2B enterprise clients · Coaches and practitioners",
+      "url": "propiology.com"
+    }
+  },
+  "connection": {
+    "title": "How They Connect",
+    "body": "The three platforms share a unified knowledge layer — the Propiología behavioral framework — but serve different audiences at different stages of awareness and commitment. propiology.org creates awareness and educates. peopleart.co converts enterprise and investor interest into relationships. propiology.com converts awareness into recurring revenue. A user might first encounter PeopleArt through a propiology.org article, engage with the methodology through peopleart.co, and ultimately become a subscriber on propiology.com. The journey is designed to be coherent across all three platforms."
+  },
+  "market": {
+    "title": "Market Architecture",
+    "items": [
+      {
+        "platform": "peopleart.co",
+        "market": "Enterprise L&D and Leadership Development",
+        "model": "B2B consulting, workshops, and facilitation programs",
+        "note": "High-value, lower-volume — primarily through direct relationships"
+      },
+      {
+        "platform": "propiology.org",
+        "market": "Behavioral science education and self-development",
+        "model": "Content marketing engine — ad-supported and community-driven",
+        "note": "Top-of-funnel — generates leads for both commercial platforms"
+      },
+      {
+        "platform": "propiology.com",
+        "market": "Personal and organisational behavioral tools",
+        "model": "SaaS subscriptions (B2C and B2B)",
+        "note": "Primary recurring revenue — scalable globally"
+      }
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "title": "About",
+    "description": "Peopleart Pty Ltd — the Australian company behind the PeopleArt methodology and the Propiología behavioral science platform."
+  },
+  "origin": {
+    "title": "Origin Story",
+    "body": "PeopleArt was born from a simple but radical conviction: the same principles that make great art also make great human systems. Fernando Camacho Ospina — a researcher at the intersection of biomedical engineering, AI, applied statistics, and behavioral science — began developing the PeopleArt framework as a way to translate the artistic mastery he studied in elite performers into actionable models for enterprise professionals. Over more than a decade of research, the framework evolved into what it is today: six artistic archetypes that give leaders, teams, strategists, innovators, marketers, and educators a precise language for mastery in their domain."
+  },
+  "company": {
+    "title": "The Company",
+    "legalName": "Peopleart Pty Ltd",
+    "country": "Australia",
+    "acn": "[TODO: ACN]",
+    "abn": "[TODO: ABN]",
+    "founded": "[TODO: founding year]",
+    "registered": "Registered in Australia"
+  },
+  "legal": {
+    "title": "Legal Status",
+    "body": "Peopleart Pty Ltd is an Australian proprietary limited company registered under the Corporations Act 2001 (Cth). The company holds the intellectual property rights to the PeopleArt methodology, the Propiología framework, and all associated software, algorithms, and documentation. This legal structure supports our eligibility for Australian Government innovation grants, R&D tax incentives, and equity investment under standard Australian corporate law."
+  },
+  "problem": {
+    "title": "The Problem We Solve",
+    "body": "Enterprises spend billions on leadership and management training each year. Most of it doesn't work. The dominant frameworks — competency models, KPIs, agile methodologies — are analytically precise but humanly impoverished. They describe what people should do but offer no language for how to do it with excellence, fluidity, and meaning. Meanwhile, the arts have spent millennia developing exactly that: rigorous, transmissible frameworks for mastery in human performance. PeopleArt bridges this gap, bringing the precision of behavioral science together with the depth of artistic tradition."
+  },
+  "mission": {
+    "title": "Mission & Vision",
+    "mission": "To transform how enterprises develop human capability — by treating every interaction, decision, and relationship as an artistic act worthy of mastery.",
+    "vision": "A world where organisations are designed with the same intentionality, craft, and beauty as great works of art."
+  },
+  "ip": {
+    "title": "Intellectual Property",
+    "body": "Peopleart Pty Ltd owns a portfolio of intellectual property developed over more than a decade of research and practice.",
+    "items": [
+      "The PeopleArt Archetype Framework — six documented methodological systems for enterprise mastery",
+      "The Propiología behavioral science framework — integrating cognitive load, narrative identity, and behavioral loop theory",
+      "Proprietary algorithms for biometric behavioral analysis and cognitive load indexing",
+      "Software tools: Care-Multiplier and Cognitive Shield",
+      "The three-portal digital platform architecture (peopleart.co, propiology.org, propiology.com)"
+    ]
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "hero": {
+    "preTitle": "Enterprise Methodology · Behavioral Science",
+    "title": "Human systems are art.",
+    "subtitle": "PeopleArt trains enterprise teams to master leadership, strategy, teamwork, marketing, innovation, and education — each as an artistic discipline.",
+    "cta1": "Explore Our Methodology",
+    "cta2": "Request Investor Access"
+  },
+  "concept": {
+    "title": "Every human system is an artistic act.",
+    "body": "Leadership is conducting. Strategy is composing. Teams are choreographies. Products are sculptures. Campaigns are paintings. Education is direction. PeopleArt transforms how enterprises operate by treating human interaction as a craft — with the precision, beauty, and mastery of the arts."
+  },
+  "archetypes": {
+    "title": "The Six Artistic Archetypes",
+    "subtitle": "Six frameworks, each mapping a core business discipline to an art form — giving enterprises a language for mastery.",
+    "cta": "Explore the Full Methodology"
+  },
+  "science": {
+    "title": "Grounded in Behavioral Science",
+    "body": "Our methodology is built on the science of Propiología — a behavioral framework combining AI, biometrics, and narrative psychology. Every archetype has a measurable behavioral foundation.",
+    "cta": "Discover the Ecosystem"
+  },
+  "metrics": {
+    "items": [
+      { "value": "6", "label": "Enterprise Archetypes" },
+      { "value": "2", "label": "Countries of Operation" },
+      { "value": "10+", "label": "Years of R&D" },
+      { "value": "3", "label": "Digital Platforms" }
+    ]
+  },
+  "finalCta": {
+    "title": "Ready to transform your organisation?",
+    "enterprise": "Work With Us",
+    "investor": "Investor Relations"
+  }
+}

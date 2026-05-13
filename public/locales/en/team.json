@@ -1,0 +1,25 @@
+{
+  "meta": {
+    "title": "Team",
+    "description": "The team behind PeopleArt — founder Fernando Camacho Ospina and the advisory board guiding Peopleart Pty Ltd."
+  },
+  "founder": {
+    "title": "Founder",
+    "name": "Fernando Camacho Ospina",
+    "role": "Founder & Chief Researcher",
+    "credentials": "[TODO: PhD title and institution]",
+    "tagline": "Researcher at the intersection of biomedical engineering, AI, behavioral science, and artistic philosophy.",
+    "bio": "Fernando Camacho Ospina has spent more than a decade at the intersection of science and human performance. Trained in biomedical engineering and applied statistics, with deep expertise in artificial intelligence and behavioral science, he developed the Propiología framework as a scientific foundation for understanding human behavioral patterns. His research into elite performance — in music, sport, and enterprise — led him to a unifying insight: mastery in any domain follows the same deep principles. This became PeopleArt: a methodology that gives enterprise professionals the language and tools of the artist to achieve mastery in their domain. Fernando has led research collaborations across [TODO: institutions], published [TODO: publications], and consulted for enterprise clients in [TODO: sectors]. He is based in [TODO: city] and leads all research, methodology development, and strategic direction for Peopleart Pty Ltd."
+  },
+  "advisors": {
+    "title": "Advisory Board",
+    "subtitle": "Peopleart Pty Ltd is guided by an advisory board of senior professionals across behavioral science, enterprise leadership, and impact investing.",
+    "tba": "Advisory board members to be announced.",
+    "members": []
+  },
+  "institutions": {
+    "title": "Research & Collaboration",
+    "subtitle": "Our research draws on collaborations with academic institutions, hospital networks, and research centers.",
+    "tba": "[TODO: Institutional affiliations and partners to be confirmed by Fernando]"
+  }
+}

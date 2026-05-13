@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "title": "Sobre Nosotros",
+    "description": "Peopleart Pty Ltd — la empresa australiana detrás de la metodología PeopleArt y la plataforma de ciencia conductual Propiología."
+  },
+  "origin": {
+    "title": "Historia de Origen",
+    "body": "PeopleArt nació de una convicción simple pero radical: los mismos principios que hacen grande al arte también hacen grandes a los sistemas humanos. Fernando Camacho Ospina — un investigador en la intersección de la ingeniería biomédica, la IA, la estadística aplicada y la ciencia del comportamiento — comenzó a desarrollar el marco PeopleArt como una forma de traducir el dominio artístico que estudió en intérpretes de élite en modelos accionables para profesionales empresariales. A lo largo de más de una década de investigación, el marco evolucionó hasta lo que es hoy: seis arquetipos artísticos que dan a los líderes, equipos, estrategas, innovadores, marketers y educadores un lenguaje preciso para el dominio en su área."
+  },
+  "company": {
+    "title": "La Empresa",
+    "legalName": "Peopleart Pty Ltd",
+    "country": "Australia",
+    "acn": "[TODO: ACN]",
+    "abn": "[TODO: ABN]",
+    "founded": "[TODO: año de fundación]",
+    "registered": "Registrada en Australia"
+  },
+  "legal": {
+    "title": "Estatus Legal",
+    "body": "Peopleart Pty Ltd es una empresa privada de responsabilidad limitada australiana registrada bajo la Ley de Corporaciones de 2001 (Cth). La empresa posee los derechos de propiedad intelectual sobre la metodología PeopleArt, el marco Propiología y todo el software, algoritmos y documentación asociados. Esta estructura legal respalda nuestra elegibilidad para subvenciones de innovación del Gobierno australiano, incentivos fiscales para I+D e inversión de capital bajo la ley corporativa australiana estándar."
+  },
+  "problem": {
+    "title": "El Problema que Resolvemos",
+    "body": "Las empresas gastan miles de millones en formación de liderazgo y gestión cada año. La mayoría no funciona. Los marcos dominantes — modelos de competencia, KPIs, metodologías ágiles — son analíticamente precisos pero humanamente empobrecidos. Describen qué deben hacer las personas pero no ofrecen un lenguaje para hacerlo con excelencia, fluidez y significado. Mientras tanto, las artes han pasado milenios desarrollando exactamente eso: marcos rigurosos y transmisibles para el dominio en la actuación humana. PeopleArt cierra esta brecha, uniendo la precisión de la ciencia conductual con la profundidad de la tradición artística."
+  },
+  "mission": {
+    "title": "Misión y Visión",
+    "mission": "Transformar la forma en que las empresas desarrollan las capacidades humanas — tratando cada interacción, decisión y relación como un acto artístico digno de dominio.",
+    "vision": "Un mundo donde las organizaciones estén diseñadas con la misma intencionalidad, maestría y belleza que las grandes obras de arte."
+  },
+  "ip": {
+    "title": "Propiedad Intelectual",
+    "body": "Peopleart Pty Ltd posee una cartera de propiedad intelectual desarrollada a lo largo de más de una década de investigación y práctica.",
+    "items": [
+      "El Marco de Arquetipos PeopleArt — seis sistemas metodológicos documentados para el dominio empresarial",
+      "El marco de ciencia conductual Propiología — integrando carga cognitiva, identidad narrativa y teoría de bucles conductuales",
+      "Algoritmos propietarios para el análisis conductual biométrico y la indexación de carga cognitiva",
+      "Herramientas de software: Care-Multiplier y Cognitive Shield",
+      "La arquitectura de plataforma digital de tres portales (peopleart.co, propiology.org, propiology.com)"
+    ]
+  }
+}

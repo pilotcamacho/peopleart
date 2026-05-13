@@ -1,0 +1,105 @@
+{
+  "meta": {
+    "title": "Methodology",
+    "description": "The PeopleArt methodology — six artistic archetypes for enterprise mastery in leadership, strategy, teamwork, marketing, innovation, and education."
+  },
+  "philosophy": {
+    "title": "The Art of Human Systems",
+    "subtitle": "Human systems are artistic disciplines. PeopleArt is the practice of mastering them.",
+    "body": "Every organisation is a living performance. Leaders conduct. Teams choreograph. Strategists compose. Innovators sculpt. Marketers paint. Educators direct. PeopleArt began with a simple but radical insight: the same principles that make great art also make great organisations. By teaching enterprise professionals to think and operate as artists in their domain, PeopleArt unlocks a level of mastery that conventional management frameworks cannot reach."
+  },
+  "archetypes": {
+    "title": "The Six Archetypes",
+    "subtitle": "Each archetype is a complete framework — a mental model, a set of tools, and a language for excellence in one business domain."
+  },
+  "conductor": {
+    "name": "Business Conductor",
+    "artForm": "Orchestral Conducting",
+    "domain": "Leadership & Management",
+    "caption": "Lead your team.",
+    "themes": ["Synchronization", "Harmony", "Timing", "Coordination", "Vision"],
+    "description": "A great leader doesn't manage — they conduct. They set the tempo, listen to each voice, and guide the whole towards a unified performance. The Business Conductor framework teaches leaders to create conditions for collective excellence through synchronization and intentional orchestration."
+  },
+  "choreographer": {
+    "name": "Team Choreographer",
+    "artForm": "Dance & Choreography",
+    "domain": "Teamwork & Alignment",
+    "caption": "All in the same direction.",
+    "themes": ["Collective Movement", "Alignment", "Synchrony", "Trust", "Flow"],
+    "description": "Great teams don't just collaborate — they move together. The Team Choreographer designs the patterns of interaction, creates alignment around shared purpose, and turns individual contributions into a unified performance that transcends what any single person could achieve."
+  },
+  "composer": {
+    "name": "Action Composer",
+    "artForm": "Musical Composition",
+    "domain": "Strategy & Behavioral Design",
+    "caption": "Create strategies to generate the actions you want.",
+    "themes": ["Behavioral Design", "Intentional Action", "Structured Influence", "Temporal Patterns"],
+    "description": "Strategy is not a document — it is a composition of actions. The Action Composer designs behavioral architectures that generate the right actions at the right moment, creating an organisational score that the whole team can perform with precision and consistency."
+  },
+  "sculptor": {
+    "name": "Product Sculptor",
+    "artForm": "Pottery & Sculpture",
+    "domain": "Innovation & Product Creation",
+    "caption": "Create innovative products.",
+    "themes": ["Craftsmanship", "Iterative Refinement", "Human Touch", "Transformation"],
+    "description": "Innovation is not invented — it is sculpted. The Product Sculptor works with the material of human needs, iterating with care and craft until the right form emerges. Every breakthrough product is the result of a thousand thoughtful refinements guided by a master craftsperson's sensibility."
+  },
+  "painter": {
+    "name": "Market Painter",
+    "artForm": "Impressionist Painting",
+    "domain": "Marketing & Campaigns",
+    "caption": "Design outstanding campaigns.",
+    "themes": ["Emotional Composition", "Storytelling", "Perception", "Color & Tone"],
+    "description": "A campaign is a painting of the market. The Market Painter composes emotional landscapes, selects the colors of language and imagery, and creates work that resonates in the minds of audiences long after the first impression — moving people not through argument, but through beauty."
+  },
+  "director": {
+    "name": "Education Director",
+    "artForm": "Film Direction",
+    "domain": "Learning & Training",
+    "caption": "Guide the narrative.",
+    "themes": ["Storytelling", "Staged Learning", "Vision & Execution", "Audience Engagement"],
+    "description": "Education is not instruction — it is direction. The Education Director scripts the learning experience, casts the participants, sets the scene, and guides the audience through a narrative arc that transforms them by the final act. Learning becomes an experience worth remembering."
+  },
+  "howItWorks": {
+    "title": "How We Work With Organisations",
+    "subtitle": "PeopleArt delivers its methodology through four integrated modalities, each adaptable to your organisation's needs and culture.",
+    "items": [
+      {
+        "title": "Workshops",
+        "description": "Immersive 1–3 day experiences where teams learn and embody their archetype. Designed for intact teams or cross-functional cohorts."
+      },
+      {
+        "title": "Facilitation",
+        "description": "PeopleArt facilitators guide key organisational processes — strategy sessions, team reviews, culture work — using archetype frameworks in real time."
+      },
+      {
+        "title": "Coaching",
+        "description": "Individual or small-group coaching using the archetype framework as a development lens. Particularly powerful for senior leaders and high-potential managers."
+      },
+      {
+        "title": "Organisational Assessment",
+        "description": "A diagnostic mapping each team member's natural archetype, identifying gaps in the organisation's artistic profile, and guiding capability building."
+      }
+    ]
+  },
+  "science": {
+    "title": "The Science Behind the Art",
+    "body": "PeopleArt is not metaphor alone — it is a behavioral technology. Each archetype is grounded in Propiología, our behavioral framework that integrates cognitive load theory, narrative identity, behavioral loops, and biometric data. The artistic metaphors are not decorative — they are precise maps of behavioral dynamics that enterprise professionals can apply immediately."
+  },
+  "offer": {
+    "title": "Enterprise Programs",
+    "subtitle": "Programs designed for enterprise-scale impact — from team-level capability building to organisation-wide cultural transformation.",
+    "items": [
+      "Custom archetype-based leadership programs",
+      "Team alignment and choreography workshops",
+      "Strategy and behavioral design intensives",
+      "Innovation and product culture programs",
+      "Marketing creativity and campaign design workshops",
+      "L&D curriculum redesign and facilitation training"
+    ]
+  },
+  "cta": {
+    "title": "Design a program for your organisation",
+    "label": "Contact Us"
+  }
+}

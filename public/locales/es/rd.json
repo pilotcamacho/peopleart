@@ -1,0 +1,101 @@
+{
+  "meta": {
+    "title": "Portafolio I+D",
+    "description": "El portafolio de investigación y desarrollo de Peopleart Pty Ltd — algoritmos propietarios, herramientas de ciencia conductual y pipeline de innovación."
+  },
+  "overview": {
+    "title": "Innovación en el Centro",
+    "body": "Peopleart Pty Ltd es fundamentalmente una empresa de I+D. La metodología PeopleArt y la plataforma de ciencia conductual Propiología no son solo productos — son los resultados de un programa sostenido de investigación original que abarca más de una década. Nuestro pipeline de innovación combina desarrollo de algoritmos, prototipado de hardware, ingeniería de software y publicación académica."
+  },
+  "algorithms": {
+    "title": "Algoritmos Propietarios",
+    "subtitle": "PI algorítmica central desarrollada por Peopleart Pty Ltd en análisis conductual, medición cognitiva y personalización impulsada por IA.",
+    "items": [
+      {
+        "name": "Modelo de Análisis Conductual Biométrico",
+        "description": "Un modelo de visión por computadora que lee señales fisiológicas — microexpresiones, postura, patrones de movimiento — para inferir estados conductuales y carga cognitiva en tiempo real.",
+        "status": "prototype",
+        "ip": "Propietario"
+      },
+      {
+        "name": "Modelo de Predicción Conductual con IA",
+        "description": "Un modelo de aprendizaje automático que predice tendencias conductuales y alineación de arquetipos a partir de datos de entrada multimodal.",
+        "status": "prototype",
+        "ip": "Propietario"
+      },
+      {
+        "name": "Índice de Carga Cognitiva (CLI)",
+        "description": "Un índice compuesto que combina señales biométricas y datos conductuales para cuantificar la carga cognitiva en tiempo real.",
+        "status": "validated",
+        "ip": "Propietario"
+      },
+      {
+        "name": "Lógica Care-Multiplier",
+        "description": "Un marco algorítmico para medir y amplificar los patrones de comportamiento prosocial en equipos y organizaciones.",
+        "status": "validated",
+        "ip": "Propietario"
+      }
+    ]
+  },
+  "hardware": {
+    "title": "Prototipos de Hardware",
+    "body": "Peopleart está desarrollando integraciones de dispositivos portátiles que llevan la recopilación de datos biométricos a contextos de formación empresarial.",
+    "status": "En desarrollo — [TODO: añadir detalles específicos del dispositivo cuando se confirmen]"
+  },
+  "software": {
+    "title": "Herramientas de Software",
+    "items": [
+      {
+        "name": "Care-Multiplier",
+        "description": "Una herramienta de software que mide y amplifica los patrones de comportamiento prosocial — cuidado, empatía y acción colaborativa — dentro de los equipos.",
+        "platform": "propiology.com"
+      },
+      {
+        "name": "Cognitive Shield",
+        "description": "Una herramienta de gestión de carga cognitiva que ayuda a las personas a identificar, monitorear y reducir la carga cognitiva excesiva mediante retroalimentación en tiempo real.",
+        "platform": "propiology.com"
+      }
+    ]
+  },
+  "ip": {
+    "title": "PI del Marco PeopleArt",
+    "body": "Los seis arquetipos de PeopleArt constituyen una metodología documentada y sistematizada que representa una propiedad intelectual significativa.",
+    "statusLabel": "Estado de PI: Metodología documentada — formalización en curso"
+  },
+  "publications": {
+    "title": "Pipeline de Publicaciones",
+    "subtitle": "Peopleart Pty Ltd mantiene un programa de publicación activo para establecer credibilidad académica y abrir nuevas oportunidades de asociación.",
+    "items": [
+      "[TODO: Listar publicaciones confirmadas, preprints o presentaciones en conferencias]",
+      "Planificado: Marco Propiología — fundamentos teóricos",
+      "Planificado: Índice de Carga Cognitiva — estudio de validación",
+      "Planificado: Arquetipos PeopleArt como taxonomía conductual — aplicaciones empresariales"
+    ]
+  },
+  "timeline": {
+    "title": "Hoja de Ruta de Innovación",
+    "past": "Hitos Pasados",
+    "future": "Pipeline de Desarrollo",
+    "pastItems": [
+      "Marco Propiología conceptualizado y documentado",
+      "Seis arquetipos PeopleArt definidos y sistematizados",
+      "Algoritmo Care-Multiplier desarrollado",
+      "Índice de Carga Cognitiva validado",
+      "Plataforma de contenidos propiology.org lanzada",
+      "Programas piloto empresariales realizados"
+    ],
+    "futureItems": [
+      "Modelo de análisis biométrico — lanzamiento en producción",
+      "Integración de dispositivos portátiles — pruebas piloto",
+      "Plataforma SaaS propiology.com — lanzamiento comercial",
+      "Programa de publicación académica — primer artículo enviado",
+      "Herramienta de evaluación empresarial — versión digital lanzada",
+      "Ronda de financiamiento Serie A"
+    ]
+  },
+  "statuses": {
+    "concept": "Concepto",
+    "prototype": "Prototipo",
+    "validated": "Validado"
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "meta": {
+    "title": "Metodología",
+    "description": "La metodología PeopleArt — seis arquetipos artísticos para el dominio empresarial en liderazgo, estrategia, trabajo en equipo, marketing, innovación y educación."
+  },
+  "philosophy": {
+    "title": "El Arte de los Sistemas Humanos",
+    "subtitle": "Los sistemas humanos son disciplinas artísticas. PeopleArt es la práctica de dominarlas.",
+    "body": "Toda organización es una actuación viva. Los líderes dirigen. Los equipos coreografían. Los estrategas componen. Los innovadores esculpen. Los marketers pintan. Los educadores dirigen. PeopleArt nació de una intuición simple pero radical: los mismos principios que hacen grande al arte también hacen grandes a las organizaciones."
+  },
+  "archetypes": {
+    "title": "Los Seis Arquetipos",
+    "subtitle": "Cada arquetipo es un marco completo — un modelo mental, un conjunto de herramientas y un lenguaje para la excelencia en un dominio empresarial."
+  },
+  "conductor": {
+    "name": "Director de Orquesta Empresarial",
+    "artForm": "Dirección de Orquesta",
+    "domain": "Liderazgo y Gestión",
+    "caption": "Lidera tu equipo.",
+    "themes": ["Sincronización", "Armonía", "Tempo", "Coordinación", "Visión"],
+    "description": "Un gran líder no gestiona — dirige. Marca el tempo, escucha cada voz y guía al conjunto hacia una actuación unificada. El arquetipo de Director de Orquesta enseña a los líderes a crear condiciones para la excelencia colectiva."
+  },
+  "choreographer": {
+    "name": "Coreógrafo de Equipos",
+    "artForm": "Danza y Coreografía",
+    "domain": "Trabajo en Equipo y Alineación",
+    "caption": "Todos en la misma dirección.",
+    "themes": ["Movimiento Colectivo", "Alineación", "Sincronía", "Confianza", "Flujo"],
+    "description": "Los grandes equipos no solo colaboran — se mueven juntos. El Coreógrafo de Equipos diseña los patrones de interacción, crea alineación en torno a un propósito compartido y convierte las contribuciones individuales en una actuación unificada."
+  },
+  "composer": {
+    "name": "Compositor de Acciones",
+    "artForm": "Composición Musical",
+    "domain": "Estrategia y Diseño Conductual",
+    "caption": "Crea estrategias para generar las acciones que deseas.",
+    "themes": ["Diseño Conductual", "Acción Intencional", "Influencia Estructurada", "Patrones Temporales"],
+    "description": "La estrategia no es un documento — es una composición de acciones. El Compositor de Acciones diseña arquitecturas conductuales que generan las acciones correctas en el momento correcto."
+  },
+  "sculptor": {
+    "name": "Escultor de Productos",
+    "artForm": "Cerámica y Escultura",
+    "domain": "Innovación y Creación de Productos",
+    "caption": "Crea productos innovadores.",
+    "themes": ["Artesanía", "Refinamiento Iterativo", "Toque Humano", "Transformación"],
+    "description": "La innovación no se inventa — se esculpe. El Escultor de Productos trabaja con el material de las necesidades humanas, iterando con cuidado y maestría hasta que emerge la forma correcta."
+  },
+  "painter": {
+    "name": "Pintor de Mercado",
+    "artForm": "Pintura Impresionista",
+    "domain": "Marketing y Campañas",
+    "caption": "Diseña campañas extraordinarias.",
+    "themes": ["Composición Emocional", "Narrativa", "Percepción", "Color y Tono"],
+    "description": "Una campaña es una pintura del mercado. El Pintor de Mercado compone paisajes emocionales, selecciona los colores del lenguaje y la imagen, y crea obras que resuenan en la mente de las audiencias mucho después del primer impacto."
+  },
+  "director": {
+    "name": "Director de Educación",
+    "artForm": "Dirección Cinematográfica",
+    "domain": "Aprendizaje y Formación",
+    "caption": "Guía la narrativa.",
+    "themes": ["Narrativa", "Aprendizaje Escenificado", "Visión y Ejecución", "Compromiso del Público"],
+    "description": "La educación no es instrucción — es dirección. El Director de Educación escribe el guion de la experiencia de aprendizaje, asigna los roles y guía a la audiencia a través de un arco narrativo que los transforma."
+  },
+  "howItWorks": {
+    "title": "Cómo Trabajamos con las Organizaciones",
+    "subtitle": "PeopleArt ofrece su metodología a través de cuatro modalidades integradas, cada una adaptable a las necesidades y cultura de tu organización.",
+    "items": [
+      {
+        "title": "Talleres",
+        "description": "Experiencias inmersivas de 1 a 3 días donde los equipos aprenden y encarnan su arquetipo. Diseñados para equipos completos o cohortes interfuncionales."
+      },
+      {
+        "title": "Facilitación",
+        "description": "Los facilitadores de PeopleArt guían procesos organizacionales clave — sesiones de estrategia, revisiones de equipo, trabajo cultural — usando los marcos de arquetipos en tiempo real."
+      },
+      {
+        "title": "Coaching",
+        "description": "Coaching individual o en grupos pequeños usando el marco de arquetipos como lente de desarrollo. Especialmente poderoso para líderes senior y gestores de alto potencial."
+      },
+      {
+        "title": "Evaluación Organizacional",
+        "description": "Un diagnóstico que mapea el arquetipo natural de cada miembro del equipo, identifica brechas en el perfil artístico de la organización y guía el desarrollo de capacidades."
+      }
+    ]
+  },
+  "science": {
+    "title": "La Ciencia detrás del Arte",
+    "body": "PeopleArt no es solo metáfora — es una tecnología conductual. Cada arquetipo está fundamentado en Propiología, nuestro marco conductual que integra la teoría de carga cognitiva, la identidad narrativa, los bucles conductuales y los datos biométricos."
+  },
+  "offer": {
+    "title": "Programas Empresariales",
+    "subtitle": "Programas diseñados para un impacto a escala empresarial — desde el desarrollo de capacidades a nivel de equipo hasta la transformación cultural de toda la organización.",
+    "items": [
+      "Programas de liderazgo basados en arquetipos personalizados",
+      "Talleres de alineación y coreografía de equipos",
+      "Intensivos de estrategia y diseño conductual",
+      "Programas de innovación y cultura de producto",
+      "Talleres de creatividad de marketing y diseño de campañas",
+      "Rediseño de currículo L&D y formación en facilitación"
+    ]
+  },
+  "cta": {
+    "title": "Diseña un programa para tu organización",
+    "label": "Contáctanos"
+  }
+}

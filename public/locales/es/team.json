@@ -1,0 +1,25 @@
+{
+  "meta": {
+    "title": "Equipo",
+    "description": "El equipo detrás de PeopleArt — el fundador Fernando Camacho Ospina y el consejo asesor que guía Peopleart Pty Ltd."
+  },
+  "founder": {
+    "title": "Fundador",
+    "name": "Fernando Camacho Ospina",
+    "role": "Fundador e Investigador Principal",
+    "credentials": "[TODO: título de doctorado e institución]",
+    "tagline": "Investigador en la intersección de la ingeniería biomédica, la IA, la ciencia del comportamiento y la filosofía artística.",
+    "bio": "Fernando Camacho Ospina ha pasado más de una década en la intersección de la ciencia y el rendimiento humano. Formado en ingeniería biomédica y estadística aplicada, con profunda experiencia en inteligencia artificial y ciencia del comportamiento, desarrolló el marco Propiología como base científica para comprender los patrones conductuales humanos. Su investigación sobre el rendimiento de élite — en música, deporte y empresa — le llevó a una intuición unificadora: el dominio en cualquier dominio sigue los mismos principios profundos. Esto se convirtió en PeopleArt: una metodología que da a los profesionales empresariales el lenguaje y las herramientas del artista para alcanzar el dominio en su área."
+  },
+  "advisors": {
+    "title": "Consejo Asesor",
+    "subtitle": "Peopleart Pty Ltd está guiada por un consejo asesor de profesionales senior en ciencia conductual, liderazgo empresarial e inversión de impacto.",
+    "tba": "Los miembros del consejo asesor se anunciarán próximamente.",
+    "members": []
+  },
+  "institutions": {
+    "title": "Investigación y Colaboración",
+    "subtitle": "Nuestra investigación se nutre de colaboraciones con instituciones académicas, redes hospitalarias y centros de investigación.",
+    "tba": "[TODO: Afiliaciones institucionales y socios a confirmar por Fernando]"
+  }
+}

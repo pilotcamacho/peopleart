@@ -1,0 +1,36 @@
+{
+  "hero": {
+    "preTitle": "Metodología Empresarial · Ciencia del Comportamiento",
+    "title": "Los sistemas humanos son arte.",
+    "subtitle": "PeopleArt entrena a equipos empresariales para dominar el liderazgo, la estrategia, el trabajo en equipo, el marketing, la innovación y la educación — cada uno como una disciplina artística.",
+    "cta1": "Explorar Nuestra Metodología",
+    "cta2": "Solicitar Acceso de Inversores"
+  },
+  "concept": {
+    "title": "Todo sistema humano es un acto artístico.",
+    "body": "El liderazgo es dirección de orquesta. La estrategia es composición. Los equipos son coreografías. Los productos son esculturas. Las campañas son pinturas. La educación es dirección cinematográfica. PeopleArt transforma la manera en que operan las empresas, tratando la interacción humana como un arte — con la precisión, la belleza y el dominio de las disciplinas artísticas."
+  },
+  "archetypes": {
+    "title": "Los Seis Arquetipos Artísticos",
+    "subtitle": "Seis marcos distintos, cada uno vinculando una disciplina empresarial fundamental a una forma de arte — dando a las empresas un lenguaje para el dominio.",
+    "cta": "Explorar la Metodología Completa"
+  },
+  "science": {
+    "title": "Fundamentado en la Ciencia del Comportamiento",
+    "body": "Nuestra metodología está construida sobre la ciencia de la Propiología — un marco conductual que combina IA, biometría y psicología narrativa. Cada arquetipo tiene una base conductual medible.",
+    "cta": "Descubrir el Ecosistema"
+  },
+  "metrics": {
+    "items": [
+      { "value": "6", "label": "Arquetipos Empresariales" },
+      { "value": "2", "label": "Países de Operación" },
+      { "value": "10+", "label": "Años de I+D" },
+      { "value": "3", "label": "Plataformas Digitales" }
+    ]
+  },
+  "finalCta": {
+    "title": "¿Listo para transformar tu organización?",
+    "enterprise": "Trabaja con Nosotros",
+    "investor": "Relaciones con Inversores"
+  }
+}

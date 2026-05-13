@@ -1,0 +1,34 @@
+{
+  "site": {
+    "name": "PeopleArt",
+    "tagline": "Vive la Belleza",
+    "description": "PeopleArt transforma cómo operan las empresas, tratando la interacción humana como una disciplina artística."
+  },
+  "cta": {
+    "exploreMethodology": "Explorar Nuestra Metodología",
+    "requestInvestorAccess": "Solicitar Acceso para Inversores",
+    "workWithUs": "Trabaja con Nosotros",
+    "contactUs": "Contáctanos",
+    "learnMore": "Saber Más",
+    "requestDataRoom": "Solicitar Acceso a la Sala de Datos",
+    "designProgram": "Diseña un Programa para Tu Organización",
+    "submit": "Enviar",
+    "cancel": "Cancelar",
+    "back": "Volver",
+    "download": "Descargar"
+  },
+  "errors": {
+    "required": "Este campo es obligatorio",
+    "invalidEmail": "Por favor, introduce un correo electrónico válido",
+    "generic": "Algo salió mal. Por favor, inténtalo de nuevo.",
+    "notFound": "Página no encontrada",
+    "rateLimited": "Demasiadas solicitudes. Por favor, inténtalo de nuevo en una hora.",
+    "unauthorized": "Debes iniciar sesión para acceder a esta página.",
+    "forbidden": "No tienes permiso para acceder a este recurso."
+  },
+  "loading": "Cargando...",
+  "success": {
+    "messageSent": "Tu mensaje ha sido enviado. Nos pondremos en contacto contigo en breve.",
+    "downloaded": "Tu descarga está comenzando."
+  }
+}

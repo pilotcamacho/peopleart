@@ -1,7 +1,16 @@
 {
   "permissions": {
     "allow": [
-      "WebFetch(domain:www.peopleart.co)"
+      "WebFetch(domain:www.peopleart.co)",
+      "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\pilot\\\\Documents\\\\FERNANDO\\\\Documentos_Apps\\\\peopleart\" -Force)",
+      "Bash(Select-Object Name, LastWriteTime, Attributes)",
+      "PowerShell(npm *)",
+      "PowerShell(node -e \"const m = require\\('C:/Users/pilot/Documents/FERNANDO/Documentos_Apps/peopleart/node_modules/eslint-config-next/core-web-vitals.js'\\); console.log\\(typeof m, Array.isArray\\(m\\), JSON.stringify\\(Object.keys\\(m\\)\\).substring\\(0,200\\)\\)\")",
+      "PowerShell(node -e \"const p = require\\('C:/Users/pilot/Documents/FERNANDO/Documentos_Apps/peopleart/node_modules/@eslint/eslintrc/package.json'\\); console.log\\(p.version\\)\")",
+      "PowerShell(Set-Location \"C:\\\\Users\\\\pilot\\\\Documents\\\\FERNANDO\\\\Documentos_Apps\\\\peopleart\"; $proc = Start-Process -FilePath \"npm\" -ArgumentList \"run\",\"dev\" -PassThru -WindowStyle Hidden; Start-Sleep -Seconds 8; try { $r = Invoke-WebRequest -Uri \"http://localhost:3000\" -MaximumRedirection 0 -ErrorAction SilentlyContinue; \"Status: $\\($r.StatusCode\\)\" } catch { \"Redirect to: $\\($_.Exception.Response.Headers.Location\\)\" }; $proc.Kill\\(\\))",
+      "PowerShell(Out-Null *)",
+      "PowerShell(netstat *)",
+      "PowerShell(npm run *)"
     ]
   }
 }

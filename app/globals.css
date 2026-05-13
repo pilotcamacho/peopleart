@@ -1,0 +1,19 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Brand palette */
+  --color-brand-cream: #f7f5f2;
+  --color-brand-ink: #1a1a1a;
+  --color-brand-gold: #c9a84c;
+  --color-brand-slate: #6b7280;
+  --color-brand-warm: #f0ebe3;
+
+  /* Typography */
+  --font-sans: var(--font-geist-sans);
+  --font-serif: var(--font-playfair);
+}
+
+html {
+  background-color: var(--color-brand-cream);
+  color: var(--color-brand-ink);
+}

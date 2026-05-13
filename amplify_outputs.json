@@ -1,0 +1,41 @@
+{
+  "_comment": "PLACEHOLDER — replace by running: npx ampx sandbox",
+  "_comment2": "This file will be overwritten with real AWS resource IDs after sandbox deploy.",
+  "auth": {
+    "user_pool_id": "PLACEHOLDER",
+    "aws_region": "ap-southeast-2",
+    "user_pool_client_id": "PLACEHOLDER",
+    "identity_pool_id": "PLACEHOLDER",
+    "mfa_methods": ["TOTP"],
+    "standard_required_attributes": ["email"],
+    "username_attributes": ["email"],
+    "user_verification_types": ["email"],
+    "groups": [
+      { "Admin": { "precedence": 0 } },
+      { "DataRoom": { "precedence": 1 } }
+    ],
+    "mfa_configuration": "OPTIONAL",
+    "password_policy": {
+      "min_length": 8,
+      "require_lowercase": true,
+      "require_numbers": true,
+      "require_symbols": true,
+      "require_uppercase": true
+    },
+    "unauthenticated_identities_enabled": true
+  },
+  "data": {
+    "url": "https://PLACEHOLDER.appsync-api.ap-southeast-2.amazonaws.com/graphql",
+    "aws_region": "ap-southeast-2",
+    "api_key": "PLACEHOLDER",
+    "default_authorization_type": "AMAZON_COGNITO_USER_POOLS",
+    "authorization_types": ["API_KEY", "AWS_IAM"],
+    "model_introspection": {
+      "version": 1,
+      "models": {},
+      "enums": {},
+      "nonModels": {}
+    }
+  },
+  "version": "1.4"
+}

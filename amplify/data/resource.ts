@@ -8,16 +8,14 @@ const schema = a.schema({
       fullName: a.string().required(),
       organisation: a.string(),
       email: a.string().required(),
-      inquiryType: a
-        .enum([
-          'enterprise_training',
-          'investor',
-          'government',
-          'strategic_partner',
-          'media',
-          'other',
-        ])
-        .required(),
+      inquiryType: a.enum([
+        'enterprise_training',
+        'investor',
+        'government',
+        'strategic_partner',
+        'media',
+        'other',
+      ]),
       message: a.string().required(),
       preferredLanguage: a.enum(['en', 'es']),
       ipHash: a.string(),
@@ -35,7 +33,7 @@ const schema = a.schema({
       description: a.string(),
       s3Key: a.string().required(),
       version: a.string(),
-      isActive: a.boolean().required(),
+      isActive: a.boolean(),
     })
     .authorization((allow) => [
       allow.groups(['Admin']),

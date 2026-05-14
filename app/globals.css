@@ -17,4 +17,17 @@
 html {
   background-color: var(--color-brand-cream);
   color: var(--color-brand-ink);
+  scroll-behavior: smooth;
+}
+
+/* Consistent focus ring for keyboard navigation */
+:focus-visible {
+  outline: 2px solid var(--color-brand-gold);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Remove focus ring for mouse users */
+:focus:not(:focus-visible) {
+  outline: none;
 }

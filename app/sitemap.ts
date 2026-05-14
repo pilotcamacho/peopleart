@@ -12,6 +12,7 @@ const PUBLIC_PAGES = [
   '/ecosystem',
   '/investors',
   '/contact',
+  '/privacy',
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

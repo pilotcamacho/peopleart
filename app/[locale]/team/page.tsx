@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { getTranslations, resolveLocale } from '@/lib/i18n/getTranslations';
+import { buildPageMetadata } from '@/lib/seo/metadata';
 import { SectionHeader } from '@/components/ui/SectionHeader';
 import { Button } from '@/components/ui/Button';
 
@@ -9,9 +10,13 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  const t = await getTranslations(resolveLocale(locale), 'team');
+  const resolvedLocale = resolveLocale(locale);
+  const t = await getTranslations(resolvedLocale, 'team');
   const meta = t.meta as { title: string; description: string };
-  return { title: meta.title, description: meta.description };
+  return buildPageMetadata(resolvedLocale, '/team', {
+    title: meta.title,
+    description: meta.description,
+  });
 }
 
 export default async function TeamPage({
@@ -119,14 +124,26 @@ export default async function TeamPage({
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'Person',
+            '@id': 'https://www.peopleart.co/#founder',
             name: 'Fernando Camacho Ospina',
+            givenName: 'Fernando',
+            familyName: 'Camacho Ospina',
+            honorificSuffix: 'PhD',
             jobTitle: 'Founder & Chief Researcher',
+            description:
+              'Founder of Peopleart Pty Ltd and creator of the Propiología framework — a behavioral science methodology for enterprise transformation.',
             affiliation: {
               '@type': 'Organization',
+              '@id': 'https://www.peopleart.co/#organization',
               name: 'Peopleart Pty Ltd',
               url: 'https://www.peopleart.co',
             },
+            worksFor: {
+              '@type': 'Organization',
+              '@id': 'https://www.peopleart.co/#organization',
+            },
             url: `https://www.peopleart.co/${resolvedLocale}/team`,
+            email: 'f.camacho@peopleart.co',
           }),
         }}
       />

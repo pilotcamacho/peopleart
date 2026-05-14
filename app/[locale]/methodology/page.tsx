@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { getTranslations, resolveLocale } from '@/lib/i18n/getTranslations';
+import { buildPageMetadata } from '@/lib/seo/metadata';
 import { Button } from '@/components/ui/Button';
 import { SectionHeader } from '@/components/ui/SectionHeader';
 import { ArchetypeCard } from '@/components/methodology/ArchetypeCard';
@@ -11,13 +12,14 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  const t = await getTranslations(resolveLocale(locale), 'methodology');
+  const resolvedLocale = resolveLocale(locale);
+  const t = await getTranslations(resolvedLocale, 'methodology');
   const meta = t.meta as { title: string; description: string };
-  return {
+  return buildPageMetadata(resolvedLocale, '/methodology', {
     title: meta.title,
     description: meta.description,
-    openGraph: { title: meta.title, description: meta.description, type: 'website' },
-  };
+    openGraph: { title: meta.title, description: meta.description },
+  });
 }
 
 export default async function MethodologyPage({

@@ -5,7 +5,12 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: '*',
       allow: '/',
-      disallow: ['/en/investors/data-room', '/es/investors/data-room'],
+      disallow: [
+      '/en/investors/data-room',
+      '/es/investors/data-room',
+      '/en/auth/',
+      '/es/auth/',
+    ],
     },
     sitemap: 'https://www.peopleart.co/sitemap.xml',
   };

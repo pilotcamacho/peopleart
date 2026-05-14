@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Suspense } from 'react';
 import { getTranslations, resolveLocale } from '@/lib/i18n/getTranslations';
+import { buildPageMetadata } from '@/lib/seo/metadata';
 import { ContactForm, type ContactStrings } from '@/components/contact/ContactForm';
 
 export async function generateMetadata({
@@ -9,9 +10,13 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  const t = await getTranslations(resolveLocale(locale), 'contact');
+  const resolvedLocale = resolveLocale(locale);
+  const t = await getTranslations(resolvedLocale, 'contact');
   const meta = t.meta as { title: string; description: string };
-  return { title: meta.title, description: meta.description };
+  return buildPageMetadata(resolvedLocale, '/contact', {
+    title: meta.title,
+    description: meta.description,
+  });
 }
 
 export default async function ContactPage({

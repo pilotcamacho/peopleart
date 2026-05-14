@@ -1,4 +1,7 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
+import fs from 'fs';
+import path from 'path';
 import { getTranslations, resolveLocale } from '@/lib/i18n/getTranslations';
 import { buildPageMetadata } from '@/lib/seo/metadata';
 import { SectionHeader } from '@/components/ui/SectionHeader';
@@ -44,6 +47,10 @@ export default async function TeamPage({
   const institutions = t.institutions as Institutions;
   const isEs = resolvedLocale === 'es';
 
+  const hasPhoto = fs.existsSync(
+    path.join(process.cwd(), 'public', 'images', 'team', 'fernando-camacho.jpg'),
+  );
+
   return (
     <main>
       {/* Page header */}
@@ -65,10 +72,20 @@ export default async function TeamPage({
             {founder.title}
           </p>
           <div className="mt-6 grid grid-cols-1 gap-10 md:grid-cols-3">
-            {/* Founder photo placeholder */}
+            {/* Founder photo */}
             <div className="flex flex-col items-center md:items-start">
-              <div className="flex h-52 w-52 items-center justify-center rounded-2xl bg-brand-warm ring-2 ring-brand-gold/20">
-                <span className="font-serif text-5xl font-bold text-brand-gold">FC</span>
+              <div className="relative flex h-52 w-52 items-center justify-center overflow-hidden rounded-2xl bg-brand-warm ring-2 ring-brand-gold/20">
+                {hasPhoto ? (
+                  <Image
+                    src="/images/team/fernando-camacho.jpg"
+                    alt="Fernando Camacho Ospina — Founder & Chief Researcher, Peopleart Pty Ltd"
+                    fill
+                    className="object-cover object-top"
+                    priority
+                  />
+                ) : (
+                  <span className="font-serif text-5xl font-bold text-brand-gold">FC</span>
+                )}
               </div>
               <p className="mt-4 font-serif text-xl font-bold text-brand-ink">{founder.name}</p>
               <p className="mt-1 text-sm font-medium text-brand-gold">{founder.role}</p>

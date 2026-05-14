@@ -12,7 +12,9 @@
       "PowerShell(netstat *)",
       "PowerShell(npm run *)",
       "Bash(npx tsc *)",
-      "Bash(npm run *)"
+      "Bash(npm run *)",
+      "Bash(ls *.env* *.example)",
+      "Bash(cat .env.local.example)"
     ]
   }
 }

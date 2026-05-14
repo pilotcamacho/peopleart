@@ -1,0 +1,49 @@
+{
+  "meta": {
+    "title": "Contacto",
+    "description": "Ponte en contacto con Peopleart Pty Ltd — formación empresarial, consultas de inversores, asociaciones gubernamentales y medios."
+  },
+  "title": "Ponerse en Contacto",
+  "subtitle": "Ya sea que explores formación empresarial, relaciones con inversores o una asociación estratégica — nos encantaría saber de ti.",
+  "labels": {
+    "fullName": "Nombre Completo",
+    "organisation": "Organización",
+    "email": "Correo Electrónico",
+    "inquiryType": "Tipo de Consulta",
+    "message": "Mensaje",
+    "preferredLanguage": "Idioma Preferido"
+  },
+  "placeholders": {
+    "fullName": "Tu nombre completo",
+    "organisation": "Tu empresa u organización",
+    "email": "tu@correo.com",
+    "message": "Cuéntanos sobre tu consulta..."
+  },
+  "optional": "Opcional",
+  "inquiryTypes": {
+    "placeholder": "Selecciona el tipo de consulta",
+    "enterprise_training": "Formación Empresarial",
+    "investor": "Inversor",
+    "government": "Gobierno",
+    "strategic_partner": "Socio Estratégico",
+    "media": "Medios",
+    "other": "Otro"
+  },
+  "languages": {
+    "placeholder": "Selecciona idioma preferido",
+    "en": "Inglés",
+    "es": "Español"
+  },
+  "submit": "Enviar Mensaje",
+  "submitting": "Enviando…",
+  "success": {
+    "title": "¡Mensaje enviado!",
+    "body": "Gracias por ponerte en contacto. Te responderemos en 2–3 días hábiles."
+  },
+  "errors": {
+    "required": "Este campo es obligatorio",
+    "invalidEmail": "Por favor, introduce un correo electrónico válido",
+    "generic": "Algo salió mal. Por favor, inténtalo de nuevo.",
+    "rateLimited": "Demasiadas solicitudes. Por favor, inténtalo de nuevo en una hora."
+  }
+}

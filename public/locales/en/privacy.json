@@ -1,0 +1,35 @@
+{
+  "meta": {
+    "title": "Privacy Policy — PeopleArt",
+    "description": "Privacy policy for peopleart.co — how Peopleart Pty Ltd collects, uses, and protects your personal information."
+  },
+  "title": "Privacy Policy",
+  "lastUpdated": "Last updated: May 2025",
+  "intro": "Peopleart Pty Ltd (\"PeopleArt\", \"we\", \"us\") operates peopleart.co. This policy explains how we handle personal information collected through this website.",
+  "sections": [
+    {
+      "heading": "Information We Collect",
+      "body": "We collect personal information you voluntarily provide through our contact form: your full name, email address, organisation, inquiry type, and message. We also record the date and type of inquiry. We do not collect browsing data, cookies, or device identifiers beyond what is necessary for site security."
+    },
+    {
+      "heading": "How We Use Your Information",
+      "body": "We use your contact details to respond to your inquiry, evaluate potential business relationships, and maintain a record of correspondence. We do not sell, rent, or share your information with third-party marketers."
+    },
+    {
+      "heading": "Data Storage",
+      "body": "Contact form submissions are stored in Amazon Web Services (AWS) DynamoDB, hosted in Australia. AWS complies with the Australian Privacy Act 1988 and ISO 27001. Data Room access logs are retained for audit purposes for a minimum of two years."
+    },
+    {
+      "heading": "Investor Data Room",
+      "body": "Access to the Investor Data Room requires authentication via Amazon Cognito. Document download events are logged (timestamp, document title, anonymised IP address) for security and audit purposes."
+    },
+    {
+      "heading": "Your Rights",
+      "body": "Under the Australian Privacy Act 1988, you have the right to access, correct, or request deletion of your personal information. To exercise these rights, contact us at f.camacho@peopleart.co."
+    },
+    {
+      "heading": "Contact",
+      "body": "For privacy inquiries, contact: f.camacho@peopleart.co — Peopleart Pty Ltd, Australia."
+    }
+  ]
+}

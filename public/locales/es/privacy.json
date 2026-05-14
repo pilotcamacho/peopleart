@@ -1,0 +1,35 @@
+{
+  "meta": {
+    "title": "Política de Privacidad — PeopleArt",
+    "description": "Política de privacidad de peopleart.co — cómo Peopleart Pty Ltd recopila, usa y protege tu información personal."
+  },
+  "title": "Política de Privacidad",
+  "lastUpdated": "Última actualización: mayo de 2025",
+  "intro": "Peopleart Pty Ltd (\"PeopleArt\", \"nosotros\") opera peopleart.co. Esta política explica cómo gestionamos la información personal recopilada a través de este sitio web.",
+  "sections": [
+    {
+      "heading": "Información que Recopilamos",
+      "body": "Recopilamos información personal que proporcionas voluntariamente a través de nuestro formulario de contacto: nombre completo, correo electrónico, organización, tipo de consulta y mensaje. También registramos la fecha y tipo de consulta. No recopilamos datos de navegación, cookies ni identificadores de dispositivo más allá de lo necesario para la seguridad del sitio."
+    },
+    {
+      "heading": "Cómo Usamos tu Información",
+      "body": "Utilizamos tus datos de contacto para responder a tu consulta, evaluar posibles relaciones comerciales y mantener un registro de correspondencia. No vendemos, alquilamos ni compartimos tu información con terceros con fines de marketing."
+    },
+    {
+      "heading": "Almacenamiento de Datos",
+      "body": "Los envíos del formulario de contacto se almacenan en Amazon Web Services (AWS) DynamoDB, alojado en Australia. AWS cumple con la Ley de Privacidad de Australia de 1988 e ISO 27001. Los registros de acceso a la Sala de Datos se conservan con fines de auditoría durante un mínimo de dos años."
+    },
+    {
+      "heading": "Sala de Datos para Inversores",
+      "body": "El acceso a la Sala de Datos para Inversores requiere autenticación mediante Amazon Cognito. Los eventos de descarga de documentos se registran (marca de tiempo, título del documento, dirección IP anonimizada) con fines de seguridad y auditoría."
+    },
+    {
+      "heading": "Tus Derechos",
+      "body": "Bajo la Ley de Privacidad de Australia de 1988, tienes derecho a acceder, corregir o solicitar la eliminación de tu información personal. Para ejercer estos derechos, contáctanos en f.camacho@peopleart.co."
+    },
+    {
+      "heading": "Contacto",
+      "body": "Para consultas sobre privacidad, contacta: f.camacho@peopleart.co — Peopleart Pty Ltd, Australia."
+    }
+  ]
+}

@@ -1,5 +1,4 @@
 import type { Metadata } from 'next';
-import Link from 'next/link';
 import { getTranslations, resolveLocale } from '@/lib/i18n/getTranslations';
 import { Button } from '@/components/ui/Button';
 import { SectionHeader } from '@/components/ui/SectionHeader';
@@ -13,16 +12,27 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  const t = await getTranslations(resolveLocale(locale), 'home');
+  const resolvedLocale = resolveLocale(locale);
+  const t = await getTranslations(resolvedLocale, 'home');
   const meta = t.meta as { title?: string; description?: string } | undefined;
   const hero = t.hero as { title: string; subtitle: string };
+  const isEs = resolvedLocale === 'es';
   return {
     title: meta?.title ?? hero.title,
     description: meta?.description ?? hero.subtitle,
+    alternates: {
+      canonical: `https://www.peopleart.co/${resolvedLocale}`,
+      languages: {
+        en: 'https://www.peopleart.co/en',
+        es: 'https://www.peopleart.co/es',
+      },
+    },
     openGraph: {
-      title: 'PeopleArt — Live Beauty',
-      description: hero.subtitle,
+      title: isEs ? 'PeopleArt — ¡Vive la Belleza!' : 'PeopleArt — Live Beauty',
+      description: meta?.description ?? hero.subtitle,
       type: 'website',
+      locale: isEs ? 'es_ES' : 'en_AU',
+      url: `https://www.peopleart.co/${resolvedLocale}`,
     },
   };
 }
@@ -183,13 +193,35 @@ export default async function HomePage({
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'Organization',
+            '@id': 'https://www.peopleart.co/#organization',
             name: 'Peopleart Pty Ltd',
+            alternateName: 'PeopleArt',
             url: 'https://www.peopleart.co',
-            logo: 'https://www.peopleart.co/images/logo.png',
+            logo: {
+              '@type': 'ImageObject',
+              url: 'https://www.peopleart.co/images/logo.png',
+              width: 200,
+              height: 200,
+            },
             description:
-              'PeopleArt transforms how enterprises operate by treating human interaction as an artistic discipline.',
-            foundingLocation: { '@type': 'Place', addressCountry: 'AU' },
-            sameAs: [],
+              'PeopleArt transforms how enterprises operate by treating human interaction as an artistic discipline — the brand and IP holding company behind the Propiología framework.',
+            foundingDate: '2024',
+            foundingLocation: {
+              '@type': 'Place',
+              addressCountry: 'AU',
+              addressLocality: 'Sydney',
+            },
+            email: 'f.camacho@peopleart.co',
+            knowsAbout: [
+              'Enterprise Training',
+              'Behavioral Science',
+              'Leadership Development',
+              'Organizational Psychology',
+            ],
+            sameAs: [
+              'https://propiology.org',
+              'https://propiology.com',
+            ],
           }),
         }}
       />

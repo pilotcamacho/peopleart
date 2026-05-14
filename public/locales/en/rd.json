@@ -3,6 +3,10 @@
     "title": "R&D Portfolio",
     "description": "Peopleart Pty Ltd's research and development portfolio — proprietary algorithms, behavioral science tools, and innovation pipeline."
   },
+  "hero": {
+    "preTitle": "Research & Development",
+    "title": "R&D Portfolio"
+  },
   "overview": {
     "title": "Innovation at the Core",
     "body": "Peopleart Pty Ltd is fundamentally an R&D company. The PeopleArt methodology and the Propiología behavioral science platform are not just products — they are the outputs of a sustained program of original research spanning more than a decade. Our innovation pipeline combines algorithm development, hardware prototyping, software engineering, and academic publication. This depth of R&D is what separates PeopleArt from conventional consulting methodologies and positions the company for defensible IP, grant funding, and scalable technology commercialisation."

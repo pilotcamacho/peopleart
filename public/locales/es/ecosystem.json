@@ -35,6 +35,17 @@
     "title": "Cómo se Conectan",
     "body": "Las tres plataformas comparten una capa de conocimiento unificada — el marco conductual Propiología — pero sirven a diferentes audiencias en diferentes etapas de conciencia y compromiso. propiology.org crea conciencia y educa. peopleart.co convierte el interés empresarial e inversor en relaciones. propiology.com convierte la conciencia en ingresos recurrentes."
   },
+  "flowDiagram": [
+    { "label": "propiology.org", "note": "Conciencia y Educación" },
+    { "label": "peopleart.co", "note": "Conversión y Relaciones" },
+    { "label": "propiology.com", "note": "Ingresos y Escala" }
+  ],
+  "tableHeaders": {
+    "platform": "Plataforma",
+    "market": "Mercado",
+    "model": "Modelo",
+    "note": "Nota"
+  },
   "market": {
     "title": "Arquitectura de Mercado",
     "items": [

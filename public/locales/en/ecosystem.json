@@ -35,6 +35,17 @@
     "title": "How They Connect",
     "body": "The three platforms share a unified knowledge layer — the Propiología behavioral framework — but serve different audiences at different stages of awareness and commitment. propiology.org creates awareness and educates. peopleart.co converts enterprise and investor interest into relationships. propiology.com converts awareness into recurring revenue. A user might first encounter PeopleArt through a propiology.org article, engage with the methodology through peopleart.co, and ultimately become a subscriber on propiology.com. The journey is designed to be coherent across all three platforms."
   },
+  "flowDiagram": [
+    { "label": "propiology.org", "note": "Awareness & Education" },
+    { "label": "peopleart.co", "note": "Conversion & Relationships" },
+    { "label": "propiology.com", "note": "Revenue & Scale" }
+  ],
+  "tableHeaders": {
+    "platform": "Platform",
+    "market": "Market",
+    "model": "Model",
+    "note": "Note"
+  },
   "market": {
     "title": "Market Architecture",
     "items": [

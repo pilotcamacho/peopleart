@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { getTranslations, resolveLocale } from '@/lib/i18n/getTranslations';
+import { buildPageMetadata } from '@/lib/seo/metadata';
 import { SectionHeader } from '@/components/ui/SectionHeader';
 import { PortalCard } from '@/components/ui/PortalCard';
 
@@ -9,9 +10,13 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  const t = await getTranslations(resolveLocale(locale), 'ecosystem');
+  const resolvedLocale = resolveLocale(locale);
+  const t = await getTranslations(resolvedLocale, 'ecosystem');
   const meta = t.meta as { title: string; description: string };
-  return { title: meta.title, description: meta.description };
+  return buildPageMetadata(resolvedLocale, '/ecosystem', {
+    title: meta.title,
+    description: meta.description,
+  });
 }
 
 export default async function EcosystemPage({
@@ -27,12 +32,16 @@ export default async function EcosystemPage({
   type Portal = { name: string; role: string; description: string; audience: string; url: string };
   type Portals = { title: string; peopleart: Portal; propiology_org: Portal; propiology_com: Portal };
   type Connection = { title: string; body: string };
+  type FlowStep = { label: string; note: string };
+  type TableHeaders = { platform: string; market: string; model: string; note: string };
   type MarketItem = { platform: string; market: string; model: string; note: string };
   type Market = { title: string; items: MarketItem[] };
 
   const overview = t.overview as Overview;
   const portals = t.portals as Portals;
   const connection = t.connection as Connection;
+  const flowDiagram = t.flowDiagram as FlowStep[];
+  const tableHeaders = t.tableHeaders as TableHeaders;
   const market = t.market as Market;
 
   return (
@@ -86,11 +95,7 @@ export default async function EcosystemPage({
 
           {/* Flow diagram (static, text-based) */}
           <div className="mt-10 flex flex-col items-center gap-2 text-center sm:flex-row sm:items-start sm:justify-center sm:gap-0">
-            {[
-              { label: 'propiology.org', note: 'Awareness & Education' },
-              { label: 'peopleart.co', note: 'Conversion & Relationships' },
-              { label: 'propiology.com', note: 'Revenue & Scale' },
-            ].map((step, i) => (
+            {flowDiagram.map((step, i) => (
               <div key={step.label} className="flex items-center gap-0 sm:flex-col">
                 <div className="flex flex-col items-center">
                   <div className="rounded-lg border-2 border-brand-gold bg-brand-warm px-5 py-3 text-center">
@@ -119,10 +124,10 @@ export default async function EcosystemPage({
             <table className="w-full text-sm">
               <thead>
                 <tr className="border-b border-white/10 text-left">
-                  <th className="px-5 py-3 font-semibold uppercase tracking-wider text-brand-gold text-xs">Platform</th>
-                  <th className="px-5 py-3 font-semibold uppercase tracking-wider text-brand-gold text-xs">Market</th>
-                  <th className="px-5 py-3 font-semibold uppercase tracking-wider text-brand-gold text-xs">Model</th>
-                  <th className="hidden px-5 py-3 font-semibold uppercase tracking-wider text-brand-gold text-xs md:table-cell">Note</th>
+                  <th className="px-5 py-3 font-semibold uppercase tracking-wider text-brand-gold text-xs">{tableHeaders.platform}</th>
+                  <th className="px-5 py-3 font-semibold uppercase tracking-wider text-brand-gold text-xs">{tableHeaders.market}</th>
+                  <th className="px-5 py-3 font-semibold uppercase tracking-wider text-brand-gold text-xs">{tableHeaders.model}</th>
+                  <th className="hidden px-5 py-3 font-semibold uppercase tracking-wider text-brand-gold text-xs md:table-cell">{tableHeaders.note}</th>
                 </tr>
               </thead>
               <tbody>

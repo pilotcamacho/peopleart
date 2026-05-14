@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { getTranslations, resolveLocale } from '@/lib/i18n/getTranslations';
+import { buildPageMetadata } from '@/lib/seo/metadata';
 import { SectionHeader } from '@/components/ui/SectionHeader';
 import { cn } from '@/lib/utils/cn';
 
@@ -9,9 +10,13 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  const t = await getTranslations(resolveLocale(locale), 'rd');
+  const resolvedLocale = resolveLocale(locale);
+  const t = await getTranslations(resolvedLocale, 'rd');
   const meta = t.meta as { title: string; description: string };
-  return { title: meta.title, description: meta.description };
+  return buildPageMetadata(resolvedLocale, '/rd', {
+    title: meta.title,
+    description: meta.description,
+  });
 }
 
 const STATUS_STYLES: Record<string, string> = {
@@ -29,6 +34,7 @@ export default async function RdPage({
   const resolvedLocale = resolveLocale(locale);
   const t = await getTranslations(resolvedLocale, 'rd');
 
+  type Hero = { preTitle: string; title: string };
   type Overview = { title: string; body: string };
   type AlgorithmItem = { name: string; description: string; status: string; ip: string };
   type AlgorithmsSection = { title: string; subtitle: string; items: AlgorithmItem[] };
@@ -46,6 +52,7 @@ export default async function RdPage({
   };
   type Statuses = { concept: string; prototype: string; validated: string };
 
+  const hero = t.hero as Hero;
   const overview = t.overview as Overview;
   const algorithms = t.algorithms as AlgorithmsSection;
   const hardware = t.hardware as Hardware;
@@ -54,7 +61,6 @@ export default async function RdPage({
   const publications = t.publications as Publications;
   const timeline = t.timeline as Timeline;
   const statuses = t.statuses as Statuses;
-  const isEs = resolvedLocale === 'es';
 
   return (
     <main>
@@ -62,10 +68,10 @@ export default async function RdPage({
       <section className="bg-brand-ink px-6 py-24 lg:py-32">
         <div className="mx-auto max-w-3xl text-center">
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-brand-gold">
-            {isEs ? 'Investigación y Desarrollo' : 'Research & Development'}
+            {hero.preTitle}
           </p>
           <h1 className="mt-4 font-serif text-5xl font-bold text-brand-cream sm:text-6xl">
-            {isEs ? 'Portafolio I+D' : 'R&D Portfolio'}
+            {hero.title}
           </h1>
         </div>
       </section>

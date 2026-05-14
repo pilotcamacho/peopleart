@@ -3,6 +3,10 @@
     "title": "Portafolio I+D",
     "description": "El portafolio de investigación y desarrollo de Peopleart Pty Ltd — algoritmos propietarios, herramientas de ciencia conductual y pipeline de innovación."
   },
+  "hero": {
+    "preTitle": "Investigación y Desarrollo",
+    "title": "Portafolio I+D"
+  },
   "overview": {
     "title": "Innovación en el Centro",
     "body": "Peopleart Pty Ltd es fundamentalmente una empresa de I+D. La metodología PeopleArt y la plataforma de ciencia conductual Propiología no son solo productos — son los resultados de un programa sostenido de investigación original que abarca más de una década. Nuestro pipeline de innovación combina desarrollo de algoritmos, prototipado de hardware, ingeniería de software y publicación académica."

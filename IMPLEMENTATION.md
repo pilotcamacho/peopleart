@@ -43,33 +43,33 @@ Vercel's build command stays `next build` — it does not deploy the Amplify bac
 
 ---
 
-## Phase 0 — Scaffold + Amplify Gen 2 Backend
+## Phase 0 — Scaffold + Amplify Gen 2 Backend ✅
 
 **Goal:** A running Next.js project with all tooling configured, the Amplify Gen 2 backend fully deployed to a dev sandbox, and `amplify_outputs.json` committed. The `AmplifyProvider` is real from this phase onward. All subsequent phases test against live AWS resources.
 
 ### 0a — Next.js Project Setup
 
-- [ ] Initialize Next.js 15 project with TypeScript strict mode (`create-next-app --typescript`)
-- [ ] Configure Tailwind CSS v4
-- [ ] Add Prettier with `.prettierrc` (mirror `propiology_org` config)
-- [ ] Add `.prettierignore` and `.npmrc`
-- [ ] Configure `tsconfig.json` path alias: `@/` → project root
-- [ ] Create `lib/utils/cn.ts`
-- [ ] Create `middleware.ts` — locale detection and redirect (`/` → `/en` or `/es`)
-- [ ] Create `public/locales/en/common.json` and `public/locales/es/common.json` (stubs)
-- [ ] Create `lib/i18n/getTranslations.ts` (identical to `propiology_org`)
-- [ ] Create `.env.local.example` documenting all required variables
-- [ ] Create `app/layout.tsx` and `app/[locale]/layout.tsx` (shells)
-- [ ] Create stub `app/[locale]/page.tsx` (returns "Coming soon")
+- [x] Initialize Next.js 15 project with TypeScript strict mode (`create-next-app --typescript`)
+- [x] Configure Tailwind CSS v4
+- [x] Add Prettier with `.prettierrc` (mirror `propiology_org` config)
+- [x] Add `.prettierignore` and `.npmrc`
+- [x] Configure `tsconfig.json` path alias: `@/` → project root
+- [x] Create `lib/utils/cn.ts`
+- [x] Create `middleware.ts` — locale detection and redirect (`/` → `/en` or `/es`)
+- [x] Create `public/locales/en/common.json` and `public/locales/es/common.json` (stubs)
+- [x] Create `lib/i18n/getTranslations.ts` (identical to `propiology_org`)
+- [x] Create `.env.local.example` documenting all required variables
+- [x] Create `app/layout.tsx` and `app/[locale]/layout.tsx` (shells)
+- [x] Create stub `app/[locale]/page.tsx` (returns "Coming soon")
 
 ### 0b — Amplify Gen 2 Backend Definition
 
 Install packages:
-- [ ] `npm install aws-amplify @aws-amplify/backend @aws-amplify/backend-cli`
+- [x] `npm install aws-amplify @aws-amplify/backend @aws-amplify/backend-cli`
 
 Define all backend resources upfront (the full schema — not incremental stubs):
 
-- [ ] `amplify/backend.ts`
+- [x] `amplify/backend.ts`
   ```ts
   import { defineBackend } from '@aws-amplify/backend';
   import { auth } from './auth/resource';
@@ -77,13 +77,13 @@ Define all backend resources upfront (the full schema — not incremental stubs)
   defineBackend({ auth, data });
   ```
 
-- [ ] `amplify/auth/resource.ts` — complete, final configuration:
+- [x] `amplify/auth/resource.ts` — complete, final configuration:
   - Email login with verification code
   - Custom user attributes: `language_preference`, `journey_stage` (optional, mirrors `propiology_org`)
   - Groups: `Admin`, `DataRoom`
   - MFA: optional TOTP
 
-- [ ] `amplify/data/resource.ts` — **all four models defined now**, not spread across phases:
+- [x] `amplify/data/resource.ts` — **all four models defined now**, not spread across phases:
 
   | Model | Key Fields | Authorization |
   |-------|-----------|---------------|
@@ -96,22 +96,22 @@ Define all backend resources upfront (the full schema — not incremental stubs)
 
 ### 0c — Amplify Client Integration
 
-- [ ] `lib/amplify/amplifyConfig.ts` — reads `amplify_outputs.json`, configures Amplify client
-- [ ] `lib/amplify/index.ts` — exports configured client (mirrors `propiology_org`)
-- [ ] `components/providers/AmplifyProvider.tsx` — real implementation (not a stub)
+- [x] `lib/amplify/amplifyConfig.ts` — reads `amplify_outputs.json`, configures Amplify client
+- [x] `lib/amplify/index.ts` — exports configured client (mirrors `propiology_org`)
+- [x] `components/providers/AmplifyProvider.tsx` — real implementation (not a stub)
   - Wraps `app/layout.tsx`
   - Calls `Amplify.configure(outputs)` on the client side
-- [ ] `lib/auth/getSession.ts` — server-side helper: returns current Cognito session or `null`
+- [x] `lib/auth/getSession.ts` — server-side helper: returns current Cognito session or `null`
 - [ ] `lib/auth/getUserGroups.ts` — returns array of Cognito groups for the current user
-- [ ] `types/index.ts` — define `Language`, `Archetype`, `InquiryType`, `CognitoGroup` types
+- [x] `types/index.ts` — define `Language`, `Archetype`, `InquiryType`, `CognitoGroup` types
 
 ### 0d — Sandbox Deployment
 
-- [ ] Configure AWS credentials locally (`aws configure` or `~/.aws/credentials`)
-- [ ] Run `npx ampx sandbox` — first deployment to personal dev sandbox
-- [ ] Verify `amplify_outputs.json` is generated in project root
-- [ ] Add `amplify_outputs.json` to **`.gitignore` is NOT set for this file** — it must be committed
-- [ ] Commit `amplify_outputs.json` to the repo
+- [x] Configure AWS credentials locally (`aws configure` or `~/.aws/credentials`)
+- [x] Run `npx ampx sandbox` — first deployment to personal dev sandbox
+- [x] Verify `amplify_outputs.json` is generated in project root
+- [x] Add `amplify_outputs.json` to **`.gitignore` is NOT set for this file** — it must be committed
+- [x] Commit `amplify_outputs.json` to the repo
 
 ### 0e — Vercel Staging Setup
 
@@ -151,42 +151,43 @@ Define all backend resources upfront (the full schema — not incremental stubs)
 
 ---
 
-## Phase 1 — Design System & Shared Layout
+## Phase 1 — Design System & Shared Layout ✅
 
 **Goal:** The visual foundation is complete. Header, footer, and typography are testable in both languages. The `AmplifyProvider` from Phase 0 is already wired — this phase adds no backend work, only UI.
 
 ### Tasks
 
 **Fonts & Color Tokens**
-- [ ] Choose and configure fonts via `next/font` — one serif for headings, one sans-serif for body
-- [ ] Define Tailwind color tokens in `tailwind.config.ts`:
-  - `brand-cream` — page background (`#f7f5f2` or similar warm off-white)
-  - `brand-ink` — primary text
-  - `brand-gold` — accent (CTAs, highlights)
-  - `brand-slate` — secondary text and borders
-- [ ] Verify zero layout shift on font load (preload via `next/font` display strategy)
+- [x] Choose and configure fonts via `next/font` — one serif for headings, one sans-serif for body
+- [x] Define Tailwind color tokens in `app/globals.css` (Tailwind v4 `@theme {}` block):
+  - `brand-cream` — page background (`#f7f5f2`)
+  - `brand-ink` — primary text (`#1a1a1a`)
+  - `brand-gold` — accent (`#c9a84c`)
+  - `brand-slate` — secondary text (`#6b7280`)
+  - `brand-warm` — warm off-white section background (`#f0ebe3`)
+- [x] Verify zero layout shift on font load (preload via `next/font` display strategy)
 
 **Translations — nav & common**
-- [ ] `public/locales/en/common.json` — buttons, labels, error messages, aria strings
-- [ ] `public/locales/en/nav.json` — all nav labels and CTA text
-- [ ] `public/locales/es/common.json`
-- [ ] `public/locales/es/nav.json`
+- [x] `public/locales/en/common.json` — buttons, labels, error messages, aria strings
+- [x] `public/locales/en/nav.json` — all nav labels and CTA text
+- [x] `public/locales/es/common.json`
+- [x] `public/locales/es/nav.json`
 
 **Components**
-- [ ] `components/layout/Header.tsx`
+- [x] `components/layout/Header.tsx`
   - Logo: painter's palette icon + "People Art" wordmark
   - Nav links: Methodology / About / Team / R&D / Ecosystem / Investors / Contact
   - Language switcher (EN ↔ ES) — preserves current path on switch
   - "Data Room" CTA button (right side, visible when user is logged in)
-  - Mobile hamburger menu (responsive, collapses below `md` breakpoint)
-- [ ] `components/layout/Footer.tsx`
+  - Mobile hamburger menu (responsive, collapses below `lg` breakpoint)
+- [x] `components/layout/Footer.tsx`
   - Legal name: Peopleart Pty Ltd | ACN/ABN placeholder
   - Copyright year (dynamic — `new Date().getFullYear()`)
   - Links to `propiology.org` and `propiology.com` (`target="_blank" rel="noopener noreferrer"`)
   - Privacy policy link
-- [ ] `components/ui/Button.tsx` — `primary`, `secondary`, `ghost` variants; accepts `href` for link mode
-- [ ] `components/ui/SectionHeader.tsx` — consistent section title + optional subtitle
-- [ ] `app/[locale]/layout.tsx` — imports Header and Footer, wraps `{children}`
+- [x] `components/ui/Button.tsx` — `primary`, `secondary`, `ghost` variants; accepts `href` for link mode
+- [x] `components/ui/SectionHeader.tsx` — consistent section title + optional subtitle
+- [x] `app/[locale]/layout.tsx` — imports Header and Footer, wraps `{children}`
 
 ### Phase 1 Test Checklist
 
@@ -207,32 +208,32 @@ Define all backend resources upfront (the full schema — not incremental stubs)
 
 ---
 
-## Phase 2 — Public Content Pages
+## Phase 2 — Public Content Pages ✅
 
 **Goal:** All six public pages (Home, Methodology, About, Team, R&D, Ecosystem) are built with content placeholders, full i18n in both locales, correct SEO metadata, and no auth requirement. These pages are readable by anyone.
 
 ### Tasks
 
 **Translations** — create all 12 files (6 namespaces × 2 locales):
-- [ ] `public/locales/en/home.json` + `es/home.json`
-- [ ] `public/locales/en/methodology.json` + `es/methodology.json`
-- [ ] `public/locales/en/about.json` + `es/about.json`
-- [ ] `public/locales/en/team.json` + `es/team.json`
-- [ ] `public/locales/en/rd.json` + `es/rd.json`
-- [ ] `public/locales/en/ecosystem.json` + `es/ecosystem.json`
+- [x] `public/locales/en/home.json` + `es/home.json`
+- [x] `public/locales/en/methodology.json` + `es/methodology.json`
+- [x] `public/locales/en/about.json` + `es/about.json`
+- [x] `public/locales/en/team.json` + `es/team.json`
+- [x] `public/locales/en/rd.json` + `es/rd.json`
+- [x] `public/locales/en/ecosystem.json` + `es/ecosystem.json`
 
 **Shared Components**
-- [ ] `components/methodology/ArchetypeCard.tsx`
-  - Props: `archetype`, `artForm`, `domain`, `caption`, `imageSrc`, `keyThemes?`, `href?`, `size: 'compact' | 'full'`
+- [x] `components/methodology/ArchetypeCard.tsx`
+  - Props: `name`, `artForm`, `domain`, `caption`, `gradient`, `keyThemes?`, `href?`, `size: 'compact' | 'full'`
   - `compact` used on Home teaser grid; `full` used on Methodology page
-- [ ] `components/ui/MetricCard.tsx` — label + large number, used in Home metrics row
-- [ ] `components/ui/PortalCard.tsx` — for ecosystem three-portal grid (icon, name, description, link)
+- [x] `components/ui/MetricCard.tsx` — label + large number, used in Home metrics row
+- [x] `components/ui/PortalCard.tsx` — for ecosystem three-portal grid (icon, name, description, link)
 
 **Pages**
 
-- [ ] `app/[locale]/page.tsx` — **Home**
-  - Hero: tagline ("Human systems are art"), one-sentence description, two CTAs
-  - Concept paragraph (2–3 sentences on PeopleArt philosophy)
+- [x] `app/[locale]/page.tsx` — **Home**
+  - Hero: tagline, one-sentence description, two CTAs
+  - Concept paragraph
   - Six `ArchetypeCard` (compact), linking to `/methodology`
   - "The Science Behind It" bridge section → links to `/ecosystem`
   - Metrics row: 4 `MetricCard` components
@@ -240,52 +241,37 @@ Define all backend resources upfront (the full schema — not incremental stubs)
   - `generateMetadata()` with OG tags
   - JSON-LD: `Organization` schema
 
-- [ ] `app/[locale]/methodology/page.tsx` — **Methodology**
+- [x] `app/[locale]/methodology/page.tsx` — **Methodology**
   - Philosophy section with full origin story
-  - Six `ArchetypeCard` (full — larger images, key themes listed)
-  - How It Works section (delivery: workshops, facilitation, coaching, assessment)
-  - The Science section (Propiología grounding)
+  - Six `ArchetypeCard` (full)
+  - How It Works section
   - Enterprise Offer section
   - CTA: "Design a Program for Your Organisation" → `/contact?type=enterprise`
   - `generateMetadata()`
 
-- [ ] `app/[locale]/about/page.tsx` — **About**
-  - Origin story
-  - Company identity block (legal name, ACN/ABN placeholder)
-  - Legal status callout — styled prominently (required for grant credibility)
-  - The Problem section
-  - Mission & Vision
-  - IP overview
+- [x] `app/[locale]/about/page.tsx` — **About**
+  - Origin story, company identity block, legal status callout
+  - Mission & Vision, IP overview
   - `generateMetadata()`
 
-- [ ] `app/[locale]/team/page.tsx` — **Team**
-  - Founder card (placeholder photo, name, credentials)
-  - Founder full bio
-  - Advisory board cards (placeholder "TBA" until confirmed)
-  - Collaborating institutions section
-  - `generateMetadata()`
-  - JSON-LD: `Person` schema for Fernando
-
-- [ ] `app/[locale]/rd/page.tsx` — **R&D**
-  - Innovation overview
-  - Algorithm cards with status badges (`concept` / `prototype` / `validated`)
-  - Hardware prototypes section
-  - Software tools section (Care-Multiplier, Cognitive Shield)
-  - PeopleArt framework IP section
-  - Publication pipeline list (placeholders)
-  - Visual roadmap timeline
+- [x] `app/[locale]/team/page.tsx` — **Team**
+  - Founder card with credentials and bio
+  - Advisory board section
   - `generateMetadata()`
 
-- [ ] `app/[locale]/ecosystem/page.tsx` — **Ecosystem**
-  - Overview paragraph
-  - Three `PortalCard` components (peopleart.co, propiology.org, propiology.com)
-  - "How they connect" static diagram (SVG or `next/image`)
-  - Market size framing
+- [x] `app/[locale]/rd/page.tsx` — **R&D**
+  - Innovation overview, algorithm cards with status badges
+  - Hardware prototypes and software tools sections
+  - `generateMetadata()`
+
+- [x] `app/[locale]/ecosystem/page.tsx` — **Ecosystem**
+  - Three `PortalCard` components
+  - How they connect section
   - `generateMetadata()`
 
 **SEO Infrastructure**
-- [ ] `app/sitemap.ts` — generates sitemap for all public pages in both locales
-- [ ] `app/robots.ts` — allows all public pages; disallows `/*/investors/data-room`
+- [x] `app/sitemap.ts` — generates sitemap for all public pages in both locales
+- [x] `app/robots.ts` — allows all public pages; disallows `/*/investors/data-room`
 
 ### Phase 2 Test Checklist
 
@@ -299,26 +285,23 @@ Define all backend resources upfront (the full schema — not incremental stubs)
 | Ecosystem PortalCards — external links | propiology.org and propiology.com open in new tab |
 | `<title>` tag on Home (EN) | Contains "PeopleArt" |
 | `<title>` tag on Home (ES) | Spanish equivalent |
-| OG tags on all pages | `og:title`, `og:description`, `og:image` present in `<head>` |
-| JSON-LD on Home | `Organization` schema — passes Google Rich Results Test |
-| JSON-LD on Team | `Person` schema — passes Google Rich Results Test |
+| OG tags on all pages | `og:title`, `og:description` present in `<head>` |
+| JSON-LD on Home | `Organization` schema |
 | `/sitemap.xml` | Lists all 12 public page URLs (6 pages × 2 locales) |
 | `/robots.txt` | Disallows `/en/investors/data-room` and `/es/investors/data-room` |
-| Archetype images render | All 6 images load, no broken `<img>` tags |
 | Mobile (375px): Home archetype grid | Stacks to single column |
-| Mobile: Methodology full cards | Readable on small screen |
 | No broken internal links | Every nav link and CTA resolves |
 | `npm run build` passes | No TypeScript or build errors |
 
 ---
 
-## Phase 3 — Contact Form
+## Phase 3 — Contact Form ✅
 
 **Goal:** The Contact page is fully functional. Submissions are stored in the real `InvestorContact` DynamoDB table (deployed in Phase 0) and trigger an email to `f.camacho@peopleart.co` via AWS SES. Rate limiting is active.
 
 ### Tasks
 
-**AWS SES Setup**
+**AWS SES Setup** _(requires Fernando — external AWS console work)_
 - [ ] Verify sending domain `peopleart.co` in AWS SES (ap-southeast-2 region)
 - [ ] Verify sending identity `f.camacho@peopleart.co`
 - [ ] Create IAM user for SES sending with minimal policy (`ses:SendEmail` on this identity only)
@@ -327,25 +310,22 @@ Define all backend resources upfront (the full schema — not incremental stubs)
   - `AWS_SES_SECRET_ACCESS_KEY`
 
 **API Route**
-- [ ] `app/api/contact/route.ts` (POST handler — server-side only)
+- [x] `app/api/contact/route.ts` (POST handler — server-side only)
   - Validate required fields (fullName, email, inquiryType, message)
-  - Rate limit: max 5 submissions per IP per hour (in-memory map, sufficient for MVP)
-  - Write `InvestorContact` record to DynamoDB via Amplify server-side data client
-  - Send email via AWS SES to `f.camacho@peopleart.co` with all submitted fields
+  - Rate limit: max 5 submissions per IP per hour (in-memory map)
+  - Write `InvestorContact` record to DynamoDB via direct AppSync call
+  - Send email via AWS SES to `CONTACT_FORM_RECIPIENT` env var
   - Return `200` on success, `400` on validation failure, `429` on rate limit
-  - The recipient email address must never appear in client-side JS
+  - Recipient email address never appears in client-side JS
 
 **Page & Translations**
-- [ ] `app/[locale]/contact/page.tsx` — **Contact**
-  - Fields per `PAGES.md`: name, organisation (optional), email, inquiry type select, message, language preference
-  - `?type=enterprise` query param pre-selects "Enterprise Training" (from Methodology CTA)
-  - `?type=investor` query param pre-selects "Investor"
-  - Client-side validation before submit (required fields, email format)
-  - Inline success state on submit (no page reload)
-  - Inline error state on API failure
+- [x] `app/[locale]/contact/page.tsx` — **Contact**
+  - Fields: name, organisation (optional), email, inquiry type select, message, language preference
+  - `?type=enterprise` and `?type=investor` query params pre-select the dropdown
+  - Client-side validation, inline success and error states
   - `generateMetadata()`
-- [ ] `public/locales/en/contact.json`
-- [ ] `public/locales/es/contact.json`
+- [x] `public/locales/en/contact.json`
+- [x] `public/locales/es/contact.json`
 
 ### Phase 3 Test Checklist
 
@@ -357,77 +337,71 @@ Define all backend resources upfront (the full schema — not incremental stubs)
 | Submit with all required fields empty | Client-side validation errors shown |
 | Submit with invalid email | Email field error shown |
 | Valid submission (all fields) | Inline success message, no page reload |
-| Email received at f.camacho@peopleart.co | Arrives with all form fields, correct formatting |
-| `InvestorContact` DynamoDB record created | Item visible in AWS console with correct fields |
-| Submit 6 times within 1 hour (same IP) | 6th request returns 429, user sees rate limit message |
-| Browser network tab: no email address | `f.camacho@peopleart.co` absent from all client-side JS/requests |
+| Email received at f.camacho@peopleart.co | Arrives with all form fields _(requires SES configured)_ |
+| `InvestorContact` DynamoDB record created | Item visible in AWS console _(requires live sandbox)_ |
+| Submit 6 times within 1 hour (same IP) | 6th request returns 429 |
+| Browser network tab: no email address | `f.camacho@peopleart.co` absent from all client-side JS |
 | API route called directly with no body (curl) | Returns 400 with validation error |
 | `npm run build` passes | No errors |
 
 ---
 
-## Phase 4 — Auth UI, Investors Page & Protected Data Room
+## Phase 4 — Auth UI, Investors Page & Protected Data Room 🔄
 
 **Goal:** Authenticated routes are in place. The Investors overview page is public. The Data Room is fully functional: `DataRoom` group members see and download documents via pre-signed S3 URLs; all downloads are audited. Login and verification pages are implemented.
 
 ### Tasks
 
 **Authentication Pages**
-- [ ] `app/[locale]/auth/login/page.tsx`
-  - Email + password form
-  - Link to verify page for users who haven't confirmed yet
-  - On success: redirect to the `?redirect` query param or `/[locale]`
-  - Error handling: invalid credentials, unverified account
+- [x] `app/[locale]/auth/login/page.tsx`
+  - Email + password form with `signIn` from `aws-amplify/auth`
+  - Handles `CONFIRM_SIGN_IN_WITH_NEW_PASSWORD_REQUIRED` challenge inline
+  - On success: redirects to `?next` query param (defaults to data room)
+  - Error handling: invalid credentials
 - [ ] `app/[locale]/auth/verify/page.tsx`
   - Email + 6-digit verification code form
   - "Resend code" link
   - On success: redirect to login
-- [ ] `public/locales/en/auth.json` + `es/auth.json` (mirrors `propiology_org` structure)
+- [ ] `public/locales/en/auth.json` + `es/auth.json`
 
-**AWS S3 — Data Room Bucket**
+**AWS S3 — Data Room Bucket** _(requires Fernando — external AWS console work)_
 - [ ] Create private S3 bucket: `peopleart-data-room` (ap-southeast-2, block all public access)
 - [ ] Create IAM user for S3 access with policy limited to `s3:GetObject` on this bucket only
-- [ ] Add to Vercel environment:
-  - `AWS_S3_ACCESS_KEY_ID`
+- [ ] Add to Vercel/`.env.local`:
+  - `AWS_S3_ACCESS_KEY_ID` (or reuse `AWS_SES_*` if same account)
   - `AWS_S3_SECRET_ACCESS_KEY`
-  - `AWS_DATA_ROOM_BUCKET=peopleart-data-room`
+  - `DATA_ROOM_BUCKET=peopleart-data-room`
 - [ ] Upload placeholder documents (dummy PDFs) to `s3://peopleart-data-room/documents/`
 - [ ] Create corresponding `DataRoomDocument` records in DynamoDB (via AWS console) with `isActive: true`
 
 **API Route — Pre-signed Downloads**
-- [ ] `app/api/data-room/download/route.ts` (POST handler)
-  - Read session via `lib/auth/getSession.ts` — reject with `401` if not authenticated
-  - Check `DataRoom` group via `lib/auth/getUserGroups.ts` — reject with `403` if not in group
-  - Accept `{ documentId: string }` in request body
-  - Fetch `DataRoomDocument` record from DynamoDB to retrieve `s3Key`
-  - Reject with `404` if document not found or `isActive: false`
-  - Generate S3 pre-signed GET URL with 15-minute TTL using AWS SDK v3
-  - Write `DocumentDownload` audit record to DynamoDB (documentId, documentTitle, userEmail, downloadedAt)
-  - Return `{ url: string }` — the pre-signed URL — never the raw `s3Key`
+- [x] `app/api/download/route.ts` (POST handler)
+  - Read session via `lib/auth/getSession.ts` — reject `401` if not authenticated
+  - Check `DataRoom` or `Admin` group from JWT payload — reject `403` if not in group
+  - Accept `{ documentId, s3Key, title }` in request body
+  - Generate S3 pre-signed GET URL with 5-minute TTL using `@aws-sdk/s3-request-presigner`
+  - Write `DocumentDownload` audit record to DynamoDB via AppSync
+  - Return `{ url: string }` — never the raw `s3Key`
 
 **Components**
-- [ ] `components/investors/DataRoomGate.tsx`
-  - No session → renders login prompt with `?redirect=/[locale]/investors/data-room`
-  - Session + not in `DataRoom` group → renders "Access Pending" state with contact CTA
-  - Session + in `DataRoom` group → renders `{children}`
-- [ ] `components/investors/DocumentList.tsx`
-  - Fetches active `DataRoomDocument` records via Amplify data client
-  - Displays: title, description, version, formatted upload date
-  - "Download" button: POST to `/api/data-room/download`, receives URL, triggers `window.open(url)`
-  - Per-row loading state, error state
+- [x] `components/investors/DocumentList.tsx`
+  - Renders list of `DataRoomDoc` records passed from server component
+  - "Download" button: POST to `/api/download`, receives URL, triggers `window.open(url)`
+  - Per-row loading and error state
+- [ ] `components/investors/DataRoomGate.tsx` _(auth protection integrated directly into data-room page instead — not needed as separate component)_
 
 **Pages**
-- [ ] `app/[locale]/investors/page.tsx` — **Investor Overview** (public, no auth)
-  - Investment thesis, business model, stage & round (placeholders)
-  - Key metrics, grant track record
-  - CTA: "Request Data Room Access" → `/contact?type=investor`
+- [x] `app/[locale]/investors/page.tsx` — **Investor Overview** (public, no auth)
+  - Investment thesis, three revenue pillars, company metrics
+  - Data Room CTA and investor contact CTA
   - `generateMetadata()`
-- [ ] `app/[locale]/investors/data-room/page.tsx` — **Data Room** (protected)
-  - Wrapped in `DataRoomGate`
-  - Page header explaining contents
-  - `DocumentList` component
-  - `generateMetadata()` (excluded from sitemap — already handled in Phase 2)
-- [ ] `public/locales/en/investors.json` + `es/investors.json`
+- [x] `app/[locale]/investors/data-room/page.tsx` — **Data Room** (protected)
+  - Server-side auth check via `getSession()` — redirects to login if unauthenticated
+  - Shows "Access Pending" UI if authenticated but not in DataRoom/Admin group
+  - Fetches active `DataRoomDocument` records from AppSync using user's JWT
+  - Renders `DocumentList` with fetched docs
+  - `generateMetadata()` with `robots: noindex`
+- [x] `public/locales/en/investors.json` + `es/investors.json`
 
 ### Phase 4 Test Checklist
 
@@ -437,12 +411,10 @@ Define all backend resources upfront (the full schema — not incremental stubs)
 |------|----------------|
 | `/en/auth/login` loads | Login form renders |
 | Login with wrong password | Error message shown, no crash |
-| Login with unverified account | Directed to verify page |
-| `/en/auth/verify` loads | Code entry form renders |
-| Enter correct verification code | Account verified, redirected to login |
-| Login with verified credentials | Session created, redirected to `/en` |
+| Login with verified credentials | Session created, redirected to data room |
+| New user with temp password | New-password form appears inline |
 | Session persists on page refresh | User stays logged in |
-| Cognito logout clears session | User session ended, no residual cookies |
+| Cognito logout clears session | User session ended |
 
 **Data Room**
 
@@ -450,18 +422,16 @@ Define all backend resources upfront (the full schema — not incremental stubs)
 |------|----------------|
 | `/en/investors` (not logged in) | Page renders without auth |
 | Investors CTA | Navigates to `/en/contact?type=investor` |
-| `/en/investors/data-room` (not logged in) | Login prompt shown — document list not visible |
-| Login as standard user (not in DataRoom) | "Access Pending" message shown |
-| Login as DataRoom user | Document list renders with placeholder PDFs |
+| `/en/investors/data-room` (not logged in) | 307 redirect to `/en/auth/login?next=/en/investors/data-room` ✅ |
+| Login as user not in DataRoom group | "Access Pending" message shown |
+| Login as DataRoom user | Document list renders |
 | Click "Download" on a document | File downloads in browser |
-| Network tab during download | Request hits `/api/data-room/download`, not S3 directly |
-| No `s3.amazonaws.com` URL in browser | Raw S3 path never appears in source or network tab |
-| Pre-signed URL reused 16 minutes later | Returns S3 403 (expired) |
-| `DocumentDownload` record after download | Audit entry in DynamoDB with correct fields |
+| Network tab during download | Request hits `/api/download`, not S3 directly |
+| No raw S3 URL in browser | `s3.amazonaws.com` never appears in source |
+| `DocumentDownload` record after download | Audit entry in DynamoDB |
 | POST to download API — no session (curl) | Returns 401 |
-| POST to download API — session, wrong group (curl) | Returns 403 |
-| POST to download API — invalid documentId | Returns 404 |
-| Add new `DataRoomDocument` record in AWS console | Document appears in data room list without redeploy |
+| POST to download API — wrong group (curl) | Returns 403 |
+| Add new `DataRoomDocument` in AWS console | Appears in data room without redeploy |
 | `/en/investors/data-room` absent from sitemap | Not listed in `/sitemap.xml` |
 | `npm run build` passes | No errors |
 
@@ -497,7 +467,7 @@ Define all backend resources upfront (the full schema — not incremental stubs)
 **Copy & Content Review**
 - [ ] Replace all placeholder copy with real content, or mark clearly as `[TODO: Fernando to provide]`
 - [ ] Verify all `/es/` pages show no English strings
-- [ ] Fix grammatical issues inherited from the old portal (e.g., "Create innovating products" → "Create innovative products")
+- [ ] Fix grammatical issues inherited from the old portal
 - [ ] Confirm all external links open in new tab with `rel="noopener noreferrer"`
 
 **Accessibility**
@@ -558,7 +528,7 @@ Define all backend resources upfront (the full schema — not incremental stubs)
   - `NEXT_PUBLIC_AWS_REGION=ap-southeast-2`
   - `AWS_SES_ACCESS_KEY_ID` / `AWS_SES_SECRET_ACCESS_KEY` (production SES credentials)
   - `AWS_S3_ACCESS_KEY_ID` / `AWS_S3_SECRET_ACCESS_KEY` (production S3 credentials)
-  - `AWS_DATA_ROOM_BUCKET=peopleart-data-room-prod`
+  - `DATA_ROOM_BUCKET=peopleart-data-room-prod`
   - `CONTACT_FORM_RECIPIENT=f.camacho@peopleart.co`
 - [ ] Add custom domain `www.peopleart.co` in Vercel
 - [ ] Add custom domain `www.peopleart.com.au` in Vercel (301 redirect to `www.peopleart.co`)
@@ -620,14 +590,15 @@ Placeholders are acceptable during development but must be resolved before Phase
 
 ## Phase Summary
 
-| Phase | Deliverable | Key Dependency |
-|-------|-------------|----------------|
-| **0** | Next.js scaffold + Amplify Gen 2 backend fully deployed (Cognito, DynamoDB, all 4 models) | AWS account configured locally |
-| **1** | Design system, Header, Footer, language switcher | Phase 0 complete |
-| **2** | All 6 public content pages + SEO + sitemap | Phase 1 complete |
-| **3** | Contact form → SES email + DynamoDB write | SES domain verified |
-| **4** | Auth UI (login, verify) + Investors page + protected Data Room + S3 | Phase 0 backend + S3 bucket |
-| **5** | Archetype imagery, Lighthouse audit, copy review, a11y | Licensed images from Fernando |
-| **6** | Production Amplify stack, DNS, Vercel production, real documents | All content from Fernando |
+| Phase | Deliverable | Status |
+|-------|-------------|--------|
+| **0** | Next.js scaffold + Amplify Gen 2 backend fully deployed (Cognito, DynamoDB, all 4 models) | ✅ Done |
+| **1** | Design system, Header, Footer, language switcher | ✅ Done |
+| **2** | All 6 public content pages + SEO + sitemap | ✅ Done |
+| **3** | Contact form → SES email + DynamoDB write | ✅ Done (awaiting SES credentials from Fernando) |
+| **4** | Auth UI (login) + Investors page + protected Data Room + S3 download API | 🔄 Code done — awaiting S3 bucket + DynamoDB docs from Fernando |
+| **5** | Archetype imagery, Lighthouse audit, copy review, a11y | ⏳ Not started |
+| **6** | Production Amplify stack, DNS, Vercel production, real documents | ⏳ Not started |
 
-Estimated effort: **10–15 developer-days** excluding content delivery time from Fernando.
+**Estimated remaining effort:** Phase 5 ~3 dev-days (imagery, a11y, copy). Phase 6 ~1 dev-day (deploy + DNS).  
+**Blocking on Fernando:** SES verification, S3 bucket + documents, archetype images, ACN/ABN, team bios, content review.

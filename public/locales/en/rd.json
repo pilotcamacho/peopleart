@@ -67,11 +67,18 @@
     "statusLabel": "IP Status: Documented methodology — formalisation in progress"
   },
   "publications": {
-    "title": "Publication Pipeline",
-    "subtitle": "Peopleart Pty Ltd maintains an active publication program to establish academic credibility and open new partnership opportunities.",
+    "title": "Selected Publications",
+    "subtitle": "Peopleart Pty Ltd's research program spans cardiovascular physiology, behavioral science, knowledge management, and organisational innovation — with an active pipeline of new publications underway.",
     "items": [
-      "[TODO: List confirmed publications, preprints, or conference presentations]",
-      "Planned: Propiología framework — theoretical foundations (target journal: [TODO])",
+      "Zwerg-Villegas, A. M., Bernal-Torres, C. A., Thoene, U., Camacho, F. et al. (2022). The Relationship between Human Resource Diversity, Innovation Activity and Internationalization Intensity in Colombian and Mexican Firms. Global Business Review. https://doi.org/10.1177/09721509221129680",
+      "Blanco-Valbuena, C. E., Bernal-Torres, C. A., Camacho, F., Díaz-Olaya, M. (2018). Creative and Cultural Industries: Study from the Knowledge Management Approach. Información Tecnológica, 29(3).",
+      "Camacho, F., Avolio, A. P. (2006). The use of central aortic pressure for determination of cardiovascular risk — effect of heart rate. 16th Scientific Meeting of the European Society of Hypertension, Madrid.",
+      "Lauto, A., Hook, J., Doran, M., Camacho, F. et al. (2005). Chitosan Adhesive for Laser Tissue Repair: In Vitro Characterization. Lasers in Surgery and Medicine, 36, 193–201.",
+      "Camacho, F., Walsh, A., Avolio, A. (2005). Principal Components Analysis for Characterisation of the Arterial Pressure Pulse. 15th Scientific Meeting of the European Society of Hypertension, Milan.",
+      "Camacho, F., Avolio, A., Lovell, N. H. (2004). Estimation of Pressure Pulse Amplification Between Aorta and Brachial Artery using Stepwise Multiple Regression. Physiological Measurement, 25, 879–889.",
+      "Contributor: Akay, M. (Ed.) (2001). Nonlinear Biomedical Signal Processing: Dynamic Analysis and Modeling. IEEE Press Series in Biomedical Engineering.",
+      "Qasem, A., Avolio, A., Camacho, F. et al. (1998). A New Technique for Non-invasive Assessment of Aortic Pressure Modulations during Treadmill Running. Euriscon, Athens.",
+      "Planned: Propiología framework — theoretical foundations",
       "Planned: Cognitive Load Index — validation study",
       "Planned: PeopleArt archetypes as a behavioral taxonomy — enterprise applications"
     ]

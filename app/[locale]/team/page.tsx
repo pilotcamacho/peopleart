@@ -148,7 +148,7 @@ export default async function TeamPage({
             honorificSuffix: 'PhD',
             jobTitle: 'Founder & Chief Researcher',
             description:
-              'Founder of Peopleart Pty Ltd and creator of the Propiología framework — a behavioral science methodology for enterprise transformation.',
+              'Founder of Peopleart Pty Ltd and creator of the Propiología framework — a behavioral scientist, biomedical engineer, and applied statistician with 30 years of experience across academic research, medical technology, and enterprise consulting.',
             affiliation: {
               '@type': 'Organization',
               '@id': 'https://www.peopleart.co/#organization',
@@ -159,6 +159,30 @@ export default async function TeamPage({
               '@type': 'Organization',
               '@id': 'https://www.peopleart.co/#organization',
             },
+            alumniOf: [
+              {
+                '@type': 'CollegeOrUniversity',
+                name: 'University of New South Wales',
+                url: 'https://www.unsw.edu.au',
+              },
+              {
+                '@type': 'CollegeOrUniversity',
+                name: 'Universidad de los Andes',
+                url: 'https://uniandes.edu.co',
+              },
+            ],
+            knowsAbout: [
+              'Biomedical Engineering',
+              'Applied Statistics',
+              'Behavioral Science',
+              'Artificial Intelligence',
+              'Cardiovascular Physiology',
+              'Education Analytics',
+              'Enterprise Leadership Development',
+              'Organizational Psychology',
+            ],
+            nationality: ['Colombian', 'Australian'],
+            knowsLanguage: ['Spanish', 'English', 'German'],
             url: `https://www.peopleart.co/${resolvedLocale}/team`,
             email: 'f.camacho@peopleart.co',
           }),

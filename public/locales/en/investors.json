@@ -1,0 +1,52 @@
+{
+  "meta": {
+    "title": "Investors — PeopleArt",
+    "description": "Invest in Peopleart Pty Ltd — the IP holding company behind Propiología. Learn our investment thesis and access the Data Room."
+  },
+  "hero": {
+    "preTitle": "Investor Relations",
+    "title": "Invest in the Science of Human Potential",
+    "subtitle": "Peopleart Pty Ltd is the Australian company that owns the intellectual property behind Propiología — a proprietary framework operating at the intersection of behavioral science, enterprise training, and personal transformation software."
+  },
+  "thesis": {
+    "title": "Investment Thesis",
+    "body": "We sit at the convergence of three high-growth markets: enterprise L&D (USD 370B), behavioral science technology, and personal development software. Our proprietary Propiología methodology — protected by trade secrets and a decade of applied research — provides a defensible moat in a market hungry for evidence-based human development solutions."
+  },
+  "pillars": {
+    "title": "Three Revenue Pillars",
+    "items": [
+      {
+        "title": "Enterprise Training",
+        "body": "The six artistic archetypes delivered as workshops, facilitated programs, and leadership intensives. Direct B2B sales to corporations, hospital networks, and universities."
+      },
+      {
+        "title": "SaaS Platform",
+        "body": "propiology.com — a B2C and B2B subscription platform built on the Propiología methodology for personal and organisational transformation. Recurring revenue, global reach."
+      },
+      {
+        "title": "IP Licensing",
+        "body": "The Propiología framework licensed to HR tech companies, coaching platforms, and corporate training providers. Asset-light, high-margin revenue stream."
+      }
+    ]
+  },
+  "metrics": {
+    "title": "Company Metrics",
+    "items": [
+      { "value": "3", "label": "Integrated platforms" },
+      { "value": "6", "label": "Proprietary archetypes" },
+      { "value": "2", "label": "Languages" },
+      { "value": "AU", "label": "Incorporated" }
+    ]
+  },
+  "dataRoom": {
+    "title": "Investor Data Room",
+    "subtitle": "Qualified investors have secure access to our pitch deck, financial models, cap table, technical whitepapers, and due diligence documents.",
+    "cta": "Access Data Room",
+    "note": "Data Room access is granted to verified investors. Please sign in with your credentials or contact us to request access."
+  },
+  "contact": {
+    "title": "Talk with the Founder",
+    "body": "Fernando Camacho, PhD is available for investor conversations. Reach out directly to schedule a call.",
+    "cta": "Contact Investor Relations"
+  }
+}

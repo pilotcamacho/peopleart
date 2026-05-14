@@ -1,0 +1,52 @@
+{
+  "meta": {
+    "title": "Inversores — PeopleArt",
+    "description": "Invierte en Peopleart Pty Ltd — la empresa titular de la PI detrás de la Propiología. Conoce nuestra tesis de inversión y accede a la Sala de Datos."
+  },
+  "hero": {
+    "preTitle": "Relaciones con Inversores",
+    "title": "Invierte en la Ciencia del Potencial Humano",
+    "subtitle": "Peopleart Pty Ltd es la empresa australiana propietaria de la propiedad intelectual detrás de la Propiología — un marco propietario en la intersección de la ciencia del comportamiento, la formación empresarial y el software de transformación personal."
+  },
+  "thesis": {
+    "title": "Tesis de Inversión",
+    "body": "Estamos en la convergencia de tres mercados de alto crecimiento: formación empresarial (USD 370B), tecnología de ciencias del comportamiento y software de desarrollo personal. Nuestra metodología propietaria Propiología — protegida por secretos comerciales y una década de investigación aplicada — proporciona una ventaja defensible en un mercado que demanda soluciones de desarrollo humano basadas en evidencia."
+  },
+  "pillars": {
+    "title": "Tres Pilares de Ingresos",
+    "items": [
+      {
+        "title": "Formación Empresarial",
+        "body": "Los seis arquetipos artísticos entregados como talleres, programas facilitados e intensivos de liderazgo. Ventas B2B directas a corporaciones, redes hospitalarias y universidades."
+      },
+      {
+        "title": "Plataforma SaaS",
+        "body": "propiology.com — una plataforma de suscripción B2C y B2B construida sobre la metodología Propiología para la transformación personal y organizacional. Ingresos recurrentes, alcance global."
+      },
+      {
+        "title": "Licencias de PI",
+        "body": "El marco Propiología licenciado a empresas de tecnología de RRHH, plataformas de coaching y proveedores de formación corporativa. Flujo de ingresos de alto margen y baja inversión."
+      }
+    ]
+  },
+  "metrics": {
+    "title": "Métricas de la Empresa",
+    "items": [
+      { "value": "3", "label": "Plataformas integradas" },
+      { "value": "6", "label": "Arquetipos propietarios" },
+      { "value": "2", "label": "Idiomas" },
+      { "value": "AU", "label": "Constituida" }
+    ]
+  },
+  "dataRoom": {
+    "title": "Sala de Datos para Inversores",
+    "subtitle": "Los inversores cualificados tienen acceso seguro a nuestro pitch deck, modelos financieros, cap table, whitepapers técnicos y documentos de due diligence.",
+    "cta": "Acceder a la Sala de Datos",
+    "note": "El acceso a la Sala de Datos se concede a inversores verificados. Inicia sesión con tus credenciales o contáctanos para solicitar acceso."
+  },
+  "contact": {
+    "title": "Habla con el Fundador",
+    "body": "Fernando Camacho, PhD está disponible para conversaciones con inversores. Contáctanos directamente para programar una llamada.",
+    "cta": "Contactar Relaciones con Inversores"
+  }
+}
